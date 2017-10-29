@@ -1,6 +1,5 @@
 import json
 
-# This class encapsulates the behavior needed for handling the peculiar half-text/half-binary rx file.
 class RxFile:
     def getData(self):
         return self.data
