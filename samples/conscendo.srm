@@ -1,0 +1,1017 @@
+{
+    "data": {
+        "axis": {
+            "0": {
+                "dualRateNeg": [
+                    100,
+                    100,
+                    100,
+                    255,
+                    255
+                ],
+                "dualRatePos": [
+                    100,
+                    100,
+                    100,
+                    255,
+                    255
+                ],
+                "expoNeg": [
+                    0,
+                    0,
+                    0,
+                    -1,
+                    -1
+                ],
+                "expoPos": [
+                    0,
+                    0,
+                    0,
+                    -1,
+                    -1
+                ],
+                "headingHoldDelay": [
+                    255,
+                    255,
+                    255,
+                    255,
+                    255
+                ],
+                "stickGain": [
+                    -96,
+                    -96,
+                    -91,
+                    -1,
+                    -1
+                ]
+            },
+            "1": {
+                "dualRateNeg": [
+                    100,
+                    100,
+                    100,
+                    255,
+                    255
+                ],
+                "dualRatePos": [
+                    100,
+                    100,
+                    100,
+                    255,
+                    255
+                ],
+                "expoNeg": [
+                    0,
+                    0,
+                    0,
+                    -1,
+                    -1
+                ],
+                "expoPos": [
+                    0,
+                    0,
+                    0,
+                    -1,
+                    -1
+                ],
+                "headingHoldDelay": [
+                    255,
+                    255,
+                    255,
+                    255,
+                    255
+                ],
+                "stickGain": [
+                    -96,
+                    -96,
+                    -91,
+                    -1,
+                    -1
+                ]
+            },
+            "2": {
+                "dualRateNeg": [
+                    30,
+                    72,
+                    100,
+                    255,
+                    255
+                ],
+                "dualRatePos": [
+                    30,
+                    72,
+                    100,
+                    255,
+                    255
+                ],
+                "expoNeg": [
+                    0,
+                    0,
+                    0,
+                    -1,
+                    -1
+                ],
+                "expoPos": [
+                    0,
+                    0,
+                    0,
+                    -1,
+                    -1
+                ],
+                "headingHoldDelay": [
+                    10,
+                    10,
+                    10,
+                    255,
+                    255
+                ],
+                "stickGain": [
+                    -96,
+                    -96,
+                    -91,
+                    -1,
+                    -1
+                ]
+            }
+        },
+        "differential": {
+            "innerRollDifferential": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "outerRollDifferential": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "yawDifferential": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ]
+        },
+        "legacy": {
+            "headingGain": [
+                228,
+                228,
+                228,
+                228,
+                228,
+                228,
+                228,
+                228,
+                228
+            ],
+            "rateGain": [
+                208,
+                228,
+                228,
+                209,
+                228,
+                228,
+                208,
+                228,
+                228
+            ]
+        },
+        "mixes": {
+            "0": {
+                "activePositions": 1,
+                "conditionID": 1,
+                "mixMaster": {
+                    "mixMaster": 32,
+                    "trimEnabled": 0
+                },
+                "mixNegRate": 40,
+                "mixPosRate": 40,
+                "mixSlave": 18,
+                "offset": 0
+            },
+            "1": {
+                "activePositions": 0,
+                "conditionID": 0,
+                "mixMaster": {
+                    "mixMaster": 0,
+                    "trimEnabled": 0
+                },
+                "mixNegRate": 0,
+                "mixPosRate": 0,
+                "mixSlave": 0,
+                "offset": 0
+            },
+            "10": {
+                "activePositions": 0,
+                "conditionID": 0,
+                "mixMaster": {
+                    "mixMaster": 0,
+                    "trimEnabled": 0
+                },
+                "mixNegRate": 0,
+                "mixPosRate": 0,
+                "mixSlave": 0,
+                "offset": 0
+            },
+            "11": {
+                "activePositions": 0,
+                "conditionID": 0,
+                "mixMaster": {
+                    "mixMaster": 0,
+                    "trimEnabled": 0
+                },
+                "mixNegRate": 0,
+                "mixPosRate": 0,
+                "mixSlave": 0,
+                "offset": 0
+            },
+            "12": {
+                "activePositions": 0,
+                "conditionID": 0,
+                "mixMaster": {
+                    "mixMaster": 0,
+                    "trimEnabled": 0
+                },
+                "mixNegRate": 0,
+                "mixPosRate": 0,
+                "mixSlave": 0,
+                "offset": 0
+            },
+            "13": {
+                "activePositions": 0,
+                "conditionID": 0,
+                "mixMaster": {
+                    "mixMaster": 0,
+                    "trimEnabled": 0
+                },
+                "mixNegRate": 0,
+                "mixPosRate": 0,
+                "mixSlave": 0,
+                "offset": 0
+            },
+            "14": {
+                "activePositions": 0,
+                "conditionID": 0,
+                "mixMaster": {
+                    "mixMaster": 0,
+                    "trimEnabled": 0
+                },
+                "mixNegRate": 0,
+                "mixPosRate": 0,
+                "mixSlave": 0,
+                "offset": 0
+            },
+            "15": {
+                "activePositions": 0,
+                "conditionID": 0,
+                "mixMaster": {
+                    "mixMaster": 0,
+                    "trimEnabled": 0
+                },
+                "mixNegRate": 0,
+                "mixPosRate": 0,
+                "mixSlave": 0,
+                "offset": 0
+            },
+            "2": {
+                "activePositions": 0,
+                "conditionID": 0,
+                "mixMaster": {
+                    "mixMaster": 0,
+                    "trimEnabled": 0
+                },
+                "mixNegRate": 0,
+                "mixPosRate": 0,
+                "mixSlave": 0,
+                "offset": 0
+            },
+            "3": {
+                "activePositions": 0,
+                "conditionID": 0,
+                "mixMaster": {
+                    "mixMaster": 0,
+                    "trimEnabled": 0
+                },
+                "mixNegRate": 0,
+                "mixPosRate": 0,
+                "mixSlave": 0,
+                "offset": 0
+            },
+            "4": {
+                "activePositions": 0,
+                "conditionID": 0,
+                "mixMaster": {
+                    "mixMaster": 0,
+                    "trimEnabled": 0
+                },
+                "mixNegRate": 0,
+                "mixPosRate": 0,
+                "mixSlave": 0,
+                "offset": 0
+            },
+            "5": {
+                "activePositions": 0,
+                "conditionID": 0,
+                "mixMaster": {
+                    "mixMaster": 0,
+                    "trimEnabled": 0
+                },
+                "mixNegRate": 0,
+                "mixPosRate": 0,
+                "mixSlave": 0,
+                "offset": 0
+            },
+            "6": {
+                "activePositions": 0,
+                "conditionID": 0,
+                "mixMaster": {
+                    "mixMaster": 0,
+                    "trimEnabled": 0
+                },
+                "mixNegRate": 0,
+                "mixPosRate": 0,
+                "mixSlave": 0,
+                "offset": 0
+            },
+            "7": {
+                "activePositions": 0,
+                "conditionID": 0,
+                "mixMaster": {
+                    "mixMaster": 0,
+                    "trimEnabled": 0
+                },
+                "mixNegRate": 0,
+                "mixPosRate": 0,
+                "mixSlave": 0,
+                "offset": 0
+            },
+            "8": {
+                "activePositions": 0,
+                "conditionID": 0,
+                "mixMaster": {
+                    "mixMaster": 0,
+                    "trimEnabled": 0
+                },
+                "mixNegRate": 0,
+                "mixPosRate": 0,
+                "mixSlave": 0,
+                "offset": 0
+            },
+            "9": {
+                "activePositions": 0,
+                "conditionID": 0,
+                "mixMaster": {
+                    "mixMaster": 0,
+                    "trimEnabled": 0
+                },
+                "mixNegRate": 0,
+                "mixPosRate": 0,
+                "mixSlave": 0,
+                "offset": 0
+            }
+        },
+        "servo": {
+            "failsafe": [
+                1,
+                0,
+                0
+            ],
+            "frameRate": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "outputSurface2servo": [
+                0,
+                160,
+                161,
+                162,
+                163,
+                2,
+                255,
+                4,
+                5,
+                255,
+                255,
+                255,
+                255,
+                255,
+                255,
+                255,
+                255,
+                255,
+                255,
+                255
+            ],
+            "phase": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ]
+        },
+        "surface": {
+            "0": {
+                "absTravelNeg": 2047,
+                "absTravelPos": 2047,
+                "associatedAxis": 1,
+                "associatedMix": 7,
+                "balance_X": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "balance_Y": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "negTravel": 100,
+                "posTravel": 100,
+                "subTrimH": 128,
+                "subTrimL": 0
+            },
+            "1": {
+                "absTravelNeg": 2047,
+                "absTravelPos": 2047,
+                "associatedAxis": 6,
+                "associatedMix": 7,
+                "balance_X": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "balance_Y": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "negTravel": 100,
+                "posTravel": 100,
+                "subTrimH": 0,
+                "subTrimL": 0
+            },
+            "10": {
+                "absTravelNeg": 2047,
+                "absTravelPos": 2047,
+                "associatedAxis": 28,
+                "associatedMix": 7,
+                "balance_X": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "balance_Y": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "negTravel": 100,
+                "posTravel": 100,
+                "subTrimH": 0,
+                "subTrimL": 0
+            },
+            "11": {
+                "absTravelNeg": 2047,
+                "absTravelPos": 2047,
+                "associatedAxis": 28,
+                "associatedMix": 7,
+                "balance_X": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "balance_Y": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "negTravel": 100,
+                "posTravel": 100,
+                "subTrimH": 0,
+                "subTrimL": 0
+            },
+            "12": {
+                "absTravelNeg": 2047,
+                "absTravelPos": 2047,
+                "associatedAxis": 28,
+                "associatedMix": 7,
+                "balance_X": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "balance_Y": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "negTravel": 100,
+                "posTravel": 100,
+                "subTrimH": 0,
+                "subTrimL": 0
+            },
+            "13": {
+                "absTravelNeg": 2047,
+                "absTravelPos": 2047,
+                "associatedAxis": 28,
+                "associatedMix": 7,
+                "balance_X": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "balance_Y": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "negTravel": 100,
+                "posTravel": 100,
+                "subTrimH": 0,
+                "subTrimL": 0
+            },
+            "14": {
+                "absTravelNeg": 2047,
+                "absTravelPos": 2047,
+                "associatedAxis": 28,
+                "associatedMix": 7,
+                "balance_X": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "balance_Y": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "negTravel": 100,
+                "posTravel": 100,
+                "subTrimH": 0,
+                "subTrimL": 0
+            },
+            "15": {
+                "absTravelNeg": 2047,
+                "absTravelPos": 2047,
+                "associatedAxis": 28,
+                "associatedMix": 7,
+                "balance_X": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "balance_Y": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "negTravel": 100,
+                "posTravel": 100,
+                "subTrimH": 0,
+                "subTrimL": 0
+            },
+            "16": {
+                "absTravelNeg": 2047,
+                "absTravelPos": 2047,
+                "associatedAxis": 28,
+                "associatedMix": 7,
+                "balance_X": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "balance_Y": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "negTravel": 100,
+                "posTravel": 100,
+                "subTrimH": 0,
+                "subTrimL": 0
+            },
+            "17": {
+                "absTravelNeg": 2047,
+                "absTravelPos": 2047,
+                "associatedAxis": 28,
+                "associatedMix": 7,
+                "balance_X": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "balance_Y": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "negTravel": 100,
+                "posTravel": 100,
+                "subTrimH": 0,
+                "subTrimL": 0
+            },
+            "18": {
+                "absTravelNeg": 2047,
+                "absTravelPos": 2047,
+                "associatedAxis": 28,
+                "associatedMix": 7,
+                "balance_X": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "balance_Y": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "negTravel": 100,
+                "posTravel": 100,
+                "subTrimH": 0,
+                "subTrimL": 0
+            },
+            "19": {
+                "absTravelNeg": 2047,
+                "absTravelPos": 2047,
+                "associatedAxis": 28,
+                "associatedMix": 7,
+                "balance_X": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "balance_Y": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "negTravel": 100,
+                "posTravel": 100,
+                "subTrimH": 0,
+                "subTrimL": 0
+            },
+            "2": {
+                "absTravelNeg": 2047,
+                "absTravelPos": 2047,
+                "associatedAxis": 9,
+                "associatedMix": 0,
+                "balance_X": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "balance_Y": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "negTravel": 100,
+                "posTravel": 100,
+                "subTrimH": 0,
+                "subTrimL": 0
+            },
+            "3": {
+                "absTravelNeg": 2047,
+                "absTravelPos": 2047,
+                "associatedAxis": 28,
+                "associatedMix": 7,
+                "balance_X": [
+                    255,
+                    255,
+                    255,
+                    255,
+                    255,
+                    255,
+                    255
+                ],
+                "balance_Y": [
+                    255,
+                    255,
+                    255,
+                    255,
+                    255,
+                    255,
+                    255
+                ],
+                "negTravel": 100,
+                "posTravel": 100,
+                "subTrimH": 0,
+                "subTrimL": 0
+            },
+            "4": {
+                "absTravelNeg": 2047,
+                "absTravelPos": 2047,
+                "associatedAxis": 28,
+                "associatedMix": 7,
+                "balance_X": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "balance_Y": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "negTravel": 100,
+                "posTravel": 100,
+                "subTrimH": 0,
+                "subTrimL": 0
+            },
+            "5": {
+                "absTravelNeg": 2047,
+                "absTravelPos": 2047,
+                "associatedAxis": 28,
+                "associatedMix": 7,
+                "balance_X": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "balance_Y": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "negTravel": 100,
+                "posTravel": 100,
+                "subTrimH": 0,
+                "subTrimL": 0
+            },
+            "6": {
+                "absTravelNeg": 2047,
+                "absTravelPos": 2047,
+                "associatedAxis": 28,
+                "associatedMix": 7,
+                "balance_X": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "balance_Y": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "negTravel": 100,
+                "posTravel": 100,
+                "subTrimH": 0,
+                "subTrimL": 0
+            },
+            "7": {
+                "absTravelNeg": 2047,
+                "absTravelPos": 2047,
+                "associatedAxis": 28,
+                "associatedMix": 7,
+                "balance_X": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "balance_Y": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "negTravel": 100,
+                "posTravel": 100,
+                "subTrimH": 0,
+                "subTrimL": 0
+            },
+            "8": {
+                "absTravelNeg": 2047,
+                "absTravelPos": 2047,
+                "associatedAxis": 28,
+                "associatedMix": 7,
+                "balance_X": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "balance_Y": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "negTravel": 100,
+                "posTravel": 100,
+                "subTrimH": 0,
+                "subTrimL": 0
+            },
+            "9": {
+                "absTravelNeg": 2047,
+                "absTravelPos": 2047,
+                "associatedAxis": 28,
+                "associatedMix": 7,
+                "balance_X": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "balance_Y": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "negTravel": 100,
+                "posTravel": 100,
+                "subTrimH": 0,
+                "subTrimL": 0
+            }
+        },
+        "system": {
+            "axis2aircraft": 36,
+            "axisDirection": 1,
+            "channel2slot": [
+                0,
+                16,
+                17,
+                18,
+                1,
+                2,
+                3,
+                4,
+                5,
+                255,
+                255,
+                255,
+                255,
+                255,
+                255,
+                255,
+                255,
+                255,
+                255,
+                255
+            ],
+            "flightModeSwitch": 4,
+            "gyroThresholdEnable": 0
+        }
+    },
+    "name": "conscendo",
+    "rawData": {
+        "0": "d0e4e4d1e4e4d0e4e4e4e4e4e4e4e4e4e4e4ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff001011120102030405ffffffffffffffffffffff24010400ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffa0a0a5ffff646464ffff646464ffff000000ffff000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffa0a0a5ffff646464ffff646464ffff000000ffff000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffa0a0a5ffff1e4864ffff1e4864ffff000000ffff000000ffff0a0a0affffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff0701646480000000000000000000000000000000ff07ff07ffffffffffffffff0706646400000000000000000000000000000000ff07ff07ffffffffffffffff0009646400000000000000000000000000000000ff07ff07ffffffffffffffff071c64640000ffffffffffffffffffffffffffffff07ff07ffffffffffffffff071c646400000000000000000000000000000000ff07ff07ffffffffffffffff071c646400000000000000000000000000000000ff07ff07ffffffffffffffff071c646400000000000000000000000000000000ff07ff07ffffffffffffffff071c646400000000000000000000000000000000ff07ff07ffffffffffffffff071c646400000000000000000000000000000000ff07ff07ffffffffffffffff071c646400000000000000000000000000000000ff07ff07ffffffffffffffff071c646400000000000000000000000000000000ff07ff07ffffffffffffffff071c646400000000000000000000000000000000ff07ff07ffffffffffffffff071c646400000000000000000000000000000000ff07ff07ffffffffffffffff071c646400000000000000000000000000000000ff07ff07ffffffffffffffff071c646400000000000000000000000000000000ff07ff07ffffffffffffffff071c646400000000000000000000000000000000ff07ff07ffffffffffffffff071c646400000000000000000000000000000000ff07ff07ffffffffffffffff071c646400000000000000000000000000000000ff07ff07ffffffffffffffff071c646400000000000000000000000000000000ff07ff07ffffffffffffffff071c646400000000000000000000000000000000ff07ff07ffffffffffffffff20122828010100ffffffffffffffffff00000000000000ffffffffffffffffff00000000000000ffffffffffffffffff00000000000000ffffffffffffffffff00000000000000ffffffffffffffffff00000000000000ffffffffffffffffff00000000000000ffffffffffffffffff00000000000000ffffffffffffffffff00000000000000ffffffffffffffffff00000000000000ffffffffffffffffff00000000000000ffffffffffffffffff00000000000000ffffffffffffffffff00000000000000ffffffffffffffffff00000000000000ffffffffffffffffff00000000000000ffffffffffffffffff00000000000000ffffffffffffffffff00a0a1a2a302ff0405ffffffffffffffffffffff01000000000000000000000000ffffffffffffffffffffffffffffff000000000000000000000000000000ffffffffffffffffffffffffffffffffff3c3cee141cee3c3ca21e28a2000082000082ffffffffffffffffffffffff32fa33f0420a0a050a8019808019808019808019808019808019808019808019808019808019808019808019808019808019808019808000f600000000ffffffffff3264ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+    },
+    "serialNumber": "SH509FMw8iCfcaDrYMom6WcM4hJ2P1"
+}
