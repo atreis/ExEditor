@@ -215,9 +215,28 @@ class RxEditor:
         self.safeOff.configure(takefocus="")
         self.safeOff.configure(text='''Off''')
 
+        self.FilterLabel = ttk.Label(self.notebook_t2)
+        self.FilterLabel.place(relx=0.0, rely=0.0, height=29, width=32)
+        self.FilterLabel.configure(background="#d9d9d9")
+        self.FilterLabel.configure(foreground="#000000")
+        self.FilterLabel.configure(relief=FLAT)
+        self.FilterLabel.configure(text='''Filter:''')
+        self.FilterLabel.configure(anchor=E)
+
+        self.Filter = Entry(self.notebook_t2)
+        self.Filter.place(relx=0.04, rely=0.0, height=29, relwidth=0.95)
+        self.Filter.configure(background="white")
+        self.Filter.configure(disabledforeground="#a3a3a3")
+        self.Filter.configure(font="TkFixedFont")
+        self.Filter.configure(foreground="#000000")
+        self.Filter.configure(insertbackground="black")
+        filterstring = gui_support.filterstring
+        self.Filter.configure(textvariable=filterstring)
+        filterstring.trace("w", lambda name, index, mode, filterstring=filterstring: gui_support.filterStringChange())
+
         self.style.configure('Treeview.Heading',  font="TkDefaultFont")
         self.advancedtree = ScrolledTreeView(self.notebook_t2)
-        self.advancedtree.place(relx=0.0, rely=0.0, relheight=1.0, relwidth=1.0)
+        self.advancedtree.place(relx=0.0, y=30, relheight=0.95, relwidth=1.0)
         self.advancedtree.configure(columns="Col1", selectmode="browse")
         self.advancedtree.heading("#0",text="Options")
         self.advancedtree.heading("#0",anchor="center")
@@ -266,6 +285,24 @@ class DialogAdvancedEdit:
         top.configure(highlightbackground="#d9d9d9")
         top.configure(highlightcolor="black")
 
+        self.FilterLabel = ttk.Label(top)
+        self.FilterLabel.place(relx=0.0, rely=0.0, height=29, width=65)
+        self.FilterLabel.configure(background="#d9d9d9")
+        self.FilterLabel.configure(foreground="#000000")
+        self.FilterLabel.configure(relief=FLAT)
+        self.FilterLabel.configure(text='''Filter:''')
+        self.FilterLabel.configure(anchor=E)
+
+        self.Filter = Entry(top)
+        self.Filter.place(relx=0.13, rely=0.45, relheight=0.06, relwidth=0.85)
+        self.Filter.configure(background="white")
+        self.Filter.configure(disabledforeground="#a3a3a3")
+        self.Filter.configure(font="TkFixedFont")
+        self.Filter.configure(foreground="#000000")
+        self.Filter.configure(insertbackground="black")
+        filterstring = gui_support.filterstring
+        self.Filter.configure(textvariable=filterstring)
+        filterstring.trace("w", lambda name, index, mode, filterstring=filterstring: dialog_support.filterStringChange())
 
         self.style.configure('Treeview.Heading',  font="TkDefaultFont")
         self.Scrolledtreeview1 = ScrolledTreeView(top)
@@ -362,7 +399,7 @@ class DialogAdvancedEdit:
         valueint.trace("w", lambda name, index, mode, valueint=valueint: dialog_support.valueIntChange())
 
         self.Entry3 = Entry(top)
-        self.Entry3.place(relx=0.13, rely=0.65, relheight=0.06, relwidth=0.85)
+        self.Entry3.place(relx=0.13, rely=0.65, relheight=0.06, relwidth=0.73)
         self.Entry3.configure(background="white")
         self.Entry3.configure(disabledforeground="#a3a3a3")
         self.Entry3.configure(font="TkFixedFont")
@@ -376,8 +413,14 @@ class DialogAdvancedEdit:
         self.Entry3.configure(textvariable=valuehex)
         valuehex.trace("w", lambda name, index, mode, valuehex=valuehex: dialog_support.valueHexChange())
 
+        self.TButton3 = ttk.Button(top)
+        self.TButton3.place(relx=0.87, rely=0.65, height=29, width=80)
+        self.TButton3.configure(command=dialog_support.__applyHex)
+        self.TButton3.configure(takefocus="")
+        self.TButton3.configure(text='''Apply''')
+
         self.Entry4 = Entry(top)
-        self.Entry4.place(relx=0.13, rely=0.75, relheight=0.06, relwidth=0.85)
+        self.Entry4.place(relx=0.13, rely=0.75, relheight=0.06, relwidth=0.73)
         self.Entry4.configure(background="white")
         self.Entry4.configure(disabledforeground="#a3a3a3")
         self.Entry4.configure(font="TkFixedFont")
@@ -390,6 +433,12 @@ class DialogAdvancedEdit:
         valuebinary = dialog_support.valuebinary
         self.Entry4.configure(textvariable=valuebinary)
         valuebinary.trace("w", lambda name, index, mode, valuebinary=valuebinary: dialog_support.valueBinaryChange())
+
+        self.TButton3 = ttk.Button(top)
+        self.TButton3.place(relx=0.87, rely=0.75, height=29, width=80)
+        self.TButton3.configure(command=dialog_support.__applyBinary)
+        self.TButton3.configure(takefocus="")
+        self.TButton3.configure(text='''Apply''')
 
         self.Scrolledtreeview1.bind('<ButtonRelease-1>', self.__treeSelection)
 

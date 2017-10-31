@@ -2,8 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="87239705-7b2a-4f59-9763-7b222e95412e" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/screenshots/screenshot.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/winexe/RxEditor.zip" afterPath="$PROJECT_DIR$/winexe/RxEditor.zip" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/winexe/RxEditor/RxEditor.exe" afterPath="$PROJECT_DIR$/winexe/RxEditor/RxEditor.exe" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/winexe/RxEditor/base_library.zip" afterPath="$PROJECT_DIR$/winexe/RxEditor/base_library.zip" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxEditor.spec" afterPath="$PROJECT_DIR$/RxEditor.spec" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/dialog_support.py" afterPath="$PROJECT_DIR$/page/dialog_support.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/gui.py" afterPath="$PROJECT_DIR$/page/gui.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/gui_support.py" afterPath="$PROJECT_DIR$/page/gui_support.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rxfile/RxFileHandler.py" afterPath="$PROJECT_DIR$/rxfile/RxFileHandler.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rxgui/PopulateSettings.py" afterPath="$PROJECT_DIR$/rxgui/PopulateSettings.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,8 +27,8 @@
       <file leaf-file-name="gui.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/page/gui.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state relative-caret-position="252">
+              <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -27,8 +37,8 @@
       <file leaf-file-name="dialog_support.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/page/dialog_support.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5650">
-              <caret line="229" column="68" lean-forward="false" selection-start-line="229" selection-start-column="68" selection-end-line="229" selection-end-column="68" />
+            <state relative-caret-position="200">
+              <caret line="190" column="0" lean-forward="false" selection-start-line="190" selection-start-column="0" selection-end-line="190" selection-end-column="0" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -61,8 +71,8 @@
       <file leaf-file-name="gui_support.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/page/gui_support.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1450">
-              <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+            <state relative-caret-position="532">
+              <caret line="111" column="0" lean-forward="false" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
               <folding>
                 <element signature="e#142#153#0" expanded="true" />
               </folding>
@@ -83,8 +93,8 @@
       <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+            <state relative-caret-position="475">
+              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -103,7 +113,7 @@
       <file leaf-file-name="PopulateSettings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rxgui/PopulateSettings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="825">
+            <state relative-caret-position="382">
               <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
               <folding />
             </state>
@@ -113,8 +123,8 @@
       <file leaf-file-name="RxFileHandler.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rxfile/RxFileHandler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
+            <state relative-caret-position="382">
+              <caret line="36" column="33" lean-forward="false" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -146,15 +156,15 @@
         <option value="$PROJECT_DIR$/rxgui/maingui.py" />
         <option value="$PROJECT_DIR$/rxgui/RxEditorState.py" />
         <option value="$PROJECT_DIR$/RxEditor.py" />
-        <option value="$PROJECT_DIR$/rxgui/PopulateSettings.py" />
-        <option value="$PROJECT_DIR$/page/gui_support.py" />
-        <option value="$PROJECT_DIR$/page/dialog_support.py" />
         <option value="$PROJECT_DIR$/rxfile/__init__.py" />
         <option value="$PROJECT_DIR$/rxgui/__init__.py" />
         <option value="$PROJECT_DIR$/page/__init__.py" />
-        <option value="$PROJECT_DIR$/page/gui.py" />
-        <option value="$PROJECT_DIR$/rxfile/RxFileHandler.py" />
         <option value="$PROJECT_DIR$/rxfile/RxFile.py" />
+        <option value="$PROJECT_DIR$/page/dialog_support.py" />
+        <option value="$PROJECT_DIR$/page/gui.py" />
+        <option value="$PROJECT_DIR$/rxgui/PopulateSettings.py" />
+        <option value="$PROJECT_DIR$/page/gui_support.py" />
+        <option value="$PROJECT_DIR$/rxfile/RxFileHandler.py" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -181,7 +191,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -209,10 +218,16 @@
               <item name="RxEditor" type="462c0819:PsiDirectoryNode" />
               <item name="samples" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="RxEditor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RxEditor" type="462c0819:PsiDirectoryNode" />
+              <item name="screenshots" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -370,7 +385,14 @@
       <option name="project" value="LOCAL" />
       <updated>1509320886302</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Slightly better instructions in readme">
+      <created>1509321545425</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1509321545425</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -381,7 +403,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928804" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3300892" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3300892" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928804" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -403,7 +425,8 @@
     <MESSAGE value="Update readme" />
     <MESSAGE value="Update windows executable" />
     <MESSAGE value="Fix path in readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix path in readme" />
+    <MESSAGE value="Slightly better instructions in readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="Slightly better instructions in readme" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -599,24 +622,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rxgui/PopulateSettings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/page/gui_support.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1450">
-          <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-          <folding>
-            <element signature="e#142#153#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/RxEditor.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -639,16 +644,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/page/dialog_support.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5650">
-          <caret line="229" column="68" lean-forward="false" selection-start-line="229" selection-start-column="68" selection-end-line="229" selection-end-column="68" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/page/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25">
@@ -656,22 +651,6 @@
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/page/gui.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rxfile/RxFileHandler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -691,10 +670,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/page/dialog_support.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="190" column="0" lean-forward="false" selection-start-line="190" selection-start-column="0" selection-end-line="190" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/gui.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/gui_support.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="111" column="0" lean-forward="false" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
+          <folding>
+            <element signature="e#142#153#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rxgui/PopulateSettings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rxfile/RxFileHandler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="36" column="33" lean-forward="false" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+        <state relative-caret-position="475">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
         </state>
       </provider>

@@ -26,8 +26,10 @@ except ImportError:
 def set_Tk_var():
     global safemodeon
     global safemodeoff
+    global filterstring
     safemodeon = StringVar()
     safemodeoff = StringVar()
+    filterstring = StringVar()
 
 def menu_open():
     global w
@@ -42,6 +44,7 @@ def menu_open():
             rxgui.rxeditorstate.setFileHandle(fh)
             rxgui.PopulateSettings.clear(w.getAdvancedTree())
             rxgui.PopulateSettings.populateAdvancedTree(fh, w.getAdvancedTree())
+            filterstring.set('')
         except:
             traceback.print_exc()
 
@@ -95,6 +98,17 @@ def tree_updatevalues(item, keys, newvalues, fh):
 
     w.getAdvancedTree().item(item, values=[str(newvalues)])
     fh.setValue(keys, newvalues)
+
+def filterStringChange():
+    global filterstring
+    if len(filterstring.get()) > 0:
+        fh = rxgui.rxeditorstate.getFileHandle()
+        rxgui.PopulateSettings.clear(w.getAdvancedTree())
+        rxgui.PopulateSettings.populateAdvancedTreeFiltered(fh, w.getAdvancedTree(), filterstring.get().lower())
+    else:
+        fh = rxgui.rxeditorstate.getFileHandle()
+        rxgui.PopulateSettings.clear(w.getAdvancedTree())
+        rxgui.PopulateSettings.populateAdvancedTree(fh, w.getAdvancedTree())
 
 def TODO():
     print('gui_support.TODO')

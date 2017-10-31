@@ -183,22 +183,28 @@ def valueIntChange():
         valuestring.set(valueint.get())
 
 def valueHexChange():
+    pass
+
+def _DialogAdvancedEdit__applyHex():
     global valuehex
     global valuestring
-    global ignorehex
-    if ignorehex.get():
-        ignorehex.set(False)
-    elif valuehex.get()!='':
-        valuestring.set(str(int(valuehex.get(), 16)))
+#    global ignorehex
+#    if ignorehex.get():
+#        ignorehex.set(False)
+#    elif valuehex.get()!='':
+    valuestring.set(str(int(valuehex.get(), 16)))
 
 def valueBinaryChange():
+    pass
+
+def _DialogAdvancedEdit__applyBinary():
     global valuebinary
     global valuestring
-    global ignorebinary
-    if ignorebinary.get():
-        ignorebinary.set(False)
-    elif valuebinary.get()!='':
-        valuestring.set(str(int(valuebinary.get(), 2)))
+#    global ignorebinary
+#    if ignorebinary.get():
+#        ignorebinary.set(False)
+#    elif valuebinary.get()!='':
+    valuestring.set(str(int(valuebinary.get(), 2)))
 
 def populateList():
     global w
