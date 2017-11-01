@@ -16,25 +16,27 @@ except ImportError:
     py3 = 1
 
 def set_Tk_var():
+    global label1
+    global infolabel
     global valuestring
-    valuestring = StringVar()
-    global valueint
-    valueint = StringVar()
     global valuehex
-    valuehex = StringVar()
     global valuebinary
-    valuebinary = StringVar()
     global valuetype
-    valuetype = StringVar()
     global ignorestring
-    ignorestring = BooleanVar(False)
-    global ignoreint
-    ignoreint = BooleanVar(False)
     global ignorehex
-    ignorehex = BooleanVar(False)
     global ignorebinary
-    ignorebinary = BooleanVar(False)
     global isusersave
+    label1 = StringVar()
+    label1.set("String:")
+    infolabel = StringVar()
+    infolabel.set("Select value to edit")
+    valuestring = StringVar()
+    valuehex = StringVar()
+    valuebinary = StringVar()
+    valuetype = StringVar()
+    ignorestring = BooleanVar(False)
+    ignorehex = BooleanVar(False)
+    ignorebinary = BooleanVar(False)
     isusersave = BooleanVar(False)
 
 def _DialogAdvancedEdit__cancel():
@@ -48,6 +50,8 @@ def _DialogAdvancedEdit__save():
     destroy_window()
 
 def validate(val, valtype):
+    global infolabel
+    infolabel.set('')
     if len(val)==0:
         return False
     return True
@@ -95,12 +99,10 @@ def updateValues():
 
 def populateValue(val, valtype=None):
     global valuestring
-    global valueint
     global valuehex
     global valuebinary
     global valuetype
     global ignorestring
-    global ignoreint
     global ignorehex
     global ignorebinary
 
@@ -111,12 +113,9 @@ def populateValue(val, valtype=None):
 
     if validate(val, valtype):
         if valtype=="int_8bit_unsigned":
-            valint = str(int(val))
+            label1.set("Integer:")
             valhex = '{0:02x}'.format(int(val))
             valbin = '{0:08b}'.format(int(val))
-            if valueint.get()!=valint:
-                ignoreint.set(True)
-                valueint.set(valint)
             if valuehex.get()!=valhex:
                 ignorehex.set(True)
                 valuehex.set(valhex)
@@ -124,12 +123,9 @@ def populateValue(val, valtype=None):
                 ignorebinary.set(True)
                 valuebinary.set(valbin)
         elif valtype == "hex_8bit":
-            valint = str(int(val, 16))
+            label1.set("String:")
             valhex = '{0:02x}'.format(int(val, 16))
             valbin = '{0:08b}'.format(int(val, 16))
-            if valueint.get() != valint:
-                ignoreint.set(True)
-                valueint.set(valint)
             if valuehex.get() != valhex:
                 ignorehex.set(True)
                 valuehex.set(valhex)
@@ -137,15 +133,12 @@ def populateValue(val, valtype=None):
                 ignorebinary.set(True)
                 valuebinary.set(valbin)
         elif valtype=="int_8bit_signed":
+            label1.set("Integer:")
             vali = int(val)
             if vali > 127:
                 vali -= 256
-            valint = str(int(vali))
             valhex = '{0:02x}'.format(int(vali))
             valbin = '{0:08b}'.format(int(vali))
-            if valueint.get()!=valint:
-                ignoreint.set(True)
-                valueint.set(valint)
             if valuehex.get()!=valhex:
                 ignorehex.set(True)
                 valuehex.set(valhex)
@@ -153,9 +146,7 @@ def populateValue(val, valtype=None):
                 ignorebinary.set(True)
                 valuebinary.set(valbin)
         elif valtype=="string":
-            if valueint.get()!='':
-                ignoreint.set(True)
-                valueint.set('')
+            label1.set("String:")
             if valuehex.get()!='':
                 ignorehex.set(True)
                 valuehex.set('')
@@ -172,15 +163,6 @@ def valueStringChange():
         ignorestring.set(False)
     else:
         populateValue(valuestring.get())
-
-def valueIntChange():
-    global valueint
-    global valuestring
-    global ignoreint
-    if ignoreint.get():
-        ignoreint.set(False)
-    elif valueint.get()!='':
-        valuestring.set(valueint.get())
 
 def valueHexChange():
     pass
