@@ -261,6 +261,7 @@ class DialogAdvancedEdit:
 
     def __treeSelection(self, event):
         dialog_support.tree_selection(event)
+        dialog_support.showHide({"top":self.frame,"string":[self.TLabel1,self.Entry1],"hex":[self.TLabel3,self.Entry3,self.TButton3],"binary":[self.TLabel4,self.Entry4,self.TButton4]})
 
     def __init__(self, top, item):
         '''This class configures and populates the toplevel window.
@@ -284,25 +285,13 @@ class DialogAdvancedEdit:
         top.configure(background="#d9d9d9")
         top.configure(highlightbackground="#d9d9d9")
         top.configure(highlightcolor="black")
+        self.top = top
 
-        self.FilterLabel = ttk.Label(top)
-        self.FilterLabel.place(relx=0.0, rely=0.0, height=29, width=65)
-        self.FilterLabel.configure(background="#d9d9d9")
-        self.FilterLabel.configure(foreground="#000000")
-        self.FilterLabel.configure(relief=FLAT)
-        self.FilterLabel.configure(text='''Filter:''')
-        self.FilterLabel.configure(anchor=E)
-
-        self.Filter = Entry(top)
-        self.Filter.place(relx=0.13, rely=0.45, relheight=0.06, relwidth=0.85)
-        self.Filter.configure(background="white")
-        self.Filter.configure(disabledforeground="#a3a3a3")
-        self.Filter.configure(font="TkFixedFont")
-        self.Filter.configure(foreground="#000000")
-        self.Filter.configure(insertbackground="black")
-        filterstring = gui_support.filterstring
-        self.Filter.configure(textvariable=filterstring)
-        filterstring.trace("w", lambda name, index, mode, filterstring=filterstring: dialog_support.filterStringChange())
+        self.frame = Frame(top)
+        self.frame.pack(side="top", fill="both", expand=True)
+        self.frame.configure(background="#d9d9d9")
+        self.frame.configure(highlightbackground="#d9d9d9")
+        self.frame.configure(highlightcolor="black")
 
         self.style.configure('Treeview.Heading',  font="TkDefaultFont")
         self.Scrolledtreeview1 = ScrolledTreeView(top)
@@ -419,11 +408,11 @@ class DialogAdvancedEdit:
         self.Entry4.configure(textvariable=valuebinary)
         valuebinary.trace("w", lambda name, index, mode, valuebinary=valuebinary: dialog_support.valueBinaryChange())
 
-        self.TButton3 = ttk.Button(top)
-        self.TButton3.place(relx=0.87, rely=0.65, height=29, width=80)
-        self.TButton3.configure(command=dialog_support.__applyBinary)
-        self.TButton3.configure(takefocus="")
-        self.TButton3.configure(text='''Apply''')
+        self.TButton4 = ttk.Button(top)
+        self.TButton4.place(relx=0.87, rely=0.65, height=29, width=80)
+        self.TButton4.configure(command=dialog_support.__applyBinary)
+        self.TButton4.configure(takefocus="")
+        self.TButton4.configure(text='''Apply''')
 
         self.Scrolledtreeview1.bind('<ButtonRelease-1>', self.__treeSelection)
 
