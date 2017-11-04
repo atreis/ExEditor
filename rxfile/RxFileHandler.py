@@ -18,14 +18,10 @@ class RxFileWrapper:
                 hold = hold[inputkey]
             c += 1
 
-    def getKeys(self, keys):
-        return self.getKeys(keys, None)
-
     # Recursively check all child keys to see if they contain the filter string
     def __checkKeys(self, keys, s):
         try:
             childkeys = self.__getData(keys).keys()
-            print("Child keys: "+str(childkeys))
             for k in childkeys:
                 if s in k.lower():
                     return True
@@ -54,9 +50,7 @@ class RxFileWrapper:
 
             if not returnThis:
                 # Check child keys recursively to see if any of them contain the filter string
-                print("Checking children for keys: "+str(keys)+" and s: "+str(s))
                 returnThis = self.__checkKeys(keys, s)
-                print("children: "+str(returnThis))
 
         # Return all keys
         try:
@@ -70,9 +64,6 @@ class RxFileWrapper:
             pass
 
         return l
-
-    def getValue(self, keys):
-        return self.getValue(keys, None)
 
     def getValue(self, keys, s):
         returnThis = False

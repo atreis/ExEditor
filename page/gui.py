@@ -144,33 +144,33 @@ class RxEditor:
                 font="TkMenuFont",
                 foreground="#000000",
                 label="Exit")
-        self.view = Menu(top,tearoff=0)
-        self.menubar.add_cascade(menu=self.view,
-                activebackground="#d9d9d9",
-                activeforeground="#000000",
-                accelerator="v",
-                background="#d9d9d9",
-                font="TkMenuFont",
-                foreground="#000000",
-                label="View")
-        self.view.add_command(
-                activebackground="#d8d8d8",
-                activeforeground="#000000",
-                accelerator="b",
-                background="#d9d9d9",
-                command=gui_support.TODO,
-                font="TkMenuFont",
-                foreground="#000000",
-                label="Basic View")
-        self.view.add_command(
-                activebackground="#d8d8d8",
-                activeforeground="#000000",
-                accelerator="d",
-                background="#d9d9d9",
-                command=gui_support.TODO,
-                font="TkMenuFont",
-                foreground="#000000",
-                label="Advanced View")
+        # self.view = Menu(top,tearoff=0)
+        # self.menubar.add_cascade(menu=self.view,
+        #         activebackground="#d9d9d9",
+        #         activeforeground="#000000",
+        #         accelerator="v",
+        #         background="#d9d9d9",
+        #         font="TkMenuFont",
+        #         foreground="#000000",
+        #         label="View")
+        # self.view.add_command(
+        #         activebackground="#d8d8d8",
+        #         activeforeground="#000000",
+        #         accelerator="b",
+        #         background="#d9d9d9",
+        #         command=gui_support.TODO,
+        #         font="TkMenuFont",
+        #         foreground="#000000",
+        #         label="Basic View")
+        # self.view.add_command(
+        #         activebackground="#d8d8d8",
+        #         activeforeground="#000000",
+        #         accelerator="d",
+        #         background="#d9d9d9",
+        #         command=gui_support.TODO,
+        #         font="TkMenuFont",
+        #         foreground="#000000",
+        #         label="Advanced View")
 
 
         self.style.configure('TNotebook.Tab', background=_bgcolor)
@@ -192,28 +192,21 @@ class RxEditor:
         self.notebook.tab(2, text="Advanced",underline="-1",)
 
         self.safe = ttk.Labelframe(self.notebook_basic)
-        self.safe.place(relx=0.01, rely=0.02, relheight=0.16, relwidth=0.22)
+        self.safe.place(relx=0.01, rely=0.02, height=65, width=65)
         self.safe.configure(relief=SUNKEN)
         self.safe.configure(text='''SAFE(tm)''')
         self.safe.configure(borderwidth="2")
         self.safe.configure(relief=SUNKEN)
         self.safe.configure(width=220)
 
-        self.style.map('TRadiobutton',background=
-            [('selected', _bgcolor), ('active',"_ana2color")])
-        self.safeOn = ttk.Radiobutton(self.safe)
-        self.safeOn.place(relx=0.09, rely=0.29, relwidth=0.21, relheight=0.0
-                , height=31)
-        self.safeOn.configure(variable=gui_support.safemodeon)
-        self.safeOn.configure(takefocus="")
-        self.safeOn.configure(text='''On''')
+        safemode = gui_support.safemode
 
-        self.safeOff = ttk.Radiobutton(self.safe)
-        self.safeOff.place(relx=0.09, rely=0.57, relwidth=0.22, relheight=0.0
-                , height=31)
-        self.safeOff.configure(variable=gui_support.safemodeoff)
-        self.safeOff.configure(takefocus="")
-        self.safeOff.configure(text='''Off''')
+        self.style.map('TRadiobutton',background=[('selected', _bgcolor), ('active',_bgcolor)])
+        self.safeOn = ttk.Radiobutton(self.safe, text='On', variable=safemode, value=1, command=lambda:gui_support.safeModeChange())
+        self.safeOn.place(x=5, y=0, width=50, height=25)
+
+        self.safeOff = ttk.Radiobutton(self.safe, text='Off', variable=safemode, value=0, command=lambda:gui_support.safeModeChange())
+        self.safeOff.place(x=5, y=21, width=50, height=25)
 
         self.FilterLabel = ttk.Label(self.notebook_t2)
         self.FilterLabel.place(relx=0.0, rely=0.0, height=29, width=32)

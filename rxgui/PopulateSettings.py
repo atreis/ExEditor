@@ -1,3 +1,4 @@
+import traceback
 # Helper for populating settings into the UI after opening a new file
 
 def populateRecursive(fh, t, keys, s):
@@ -38,6 +39,15 @@ def populateAdvancedTree(fh, t):
 
 def populateAdvancedTreeFiltered(fh, t, s):
     populateRecursive(fh, t, [], s)
+
+def populateSafeTab(fh, o):
+    # safemode
+    safemode = o["safemode"]
+    try:
+        safemode.set(fh.getValue(["data","autopilot","safeEnabled"], None))
+    except:
+        traceback.print_exc()
+        safemode.set(0)
 
 def clear(t):
     t.delete(*t.get_children())

@@ -24,15 +24,14 @@ except ImportError:
     py3 = 1
 
 def set_Tk_var():
-    global safemodeon
-    global safemodeoff
+    global safemode
     global filterstring
-    safemodeon = StringVar()
-    safemodeoff = StringVar()
+    safemode = IntVar()
     filterstring = StringVar()
 
 def menu_open():
     global w
+    global safemode
     options = {}
     options['title'] = "Open Rx SRM..."
     options['filetypes'] = [('srm', '*.srm'), ('any', '*.*')]
@@ -45,6 +44,7 @@ def menu_open():
             rxgui.PopulateSettings.clear(w.getAdvancedTree())
             rxgui.PopulateSettings.populateAdvancedTree(fh, w.getAdvancedTree())
             filterstring.set('')
+            rxgui.PopulateSettings.populateSafeTab(fh, {"safemode":safemode})
         except:
             traceback.print_exc()
 
@@ -110,9 +110,13 @@ def filterStringChange():
         rxgui.PopulateSettings.clear(w.getAdvancedTree())
         rxgui.PopulateSettings.populateAdvancedTree(fh, w.getAdvancedTree())
 
-def TODO():
-    print('gui_support.TODO')
-    sys.stdout.flush()
+def safeModeChange():
+    global safemode
+    global filterstring
+    fh = rxgui.rxeditorstate.getFileHandle()
+    if fh is not None:
+        fh.setValue(["data","autopilot","safeEnabled"], safemode.get())
+        filterStringChange()
 
 def init(top, gui, *args, **kwargs):
     global w, top_level, root
