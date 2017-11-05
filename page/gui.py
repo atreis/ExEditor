@@ -89,7 +89,7 @@ class RxEditor:
             [('selected', _compcolor), ('active',_ana2color)])
 
         top.geometry("1000x700+100+100")
-        top.title("RxEditor")
+        top.title("RxEditor (v0.8.4)")
         top.configure(background="#d9d9d9")
         top.configure(highlightbackground="#e9e9e9")
         top.configure(highlightcolor="#191919")
