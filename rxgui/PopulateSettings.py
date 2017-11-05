@@ -43,11 +43,22 @@ def populateAdvancedTreeFiltered(fh, t, s):
 def populateSafeTab(fh, o):
     # safemode
     safemode = o["safemode"]
+    safelimitedflightmodeenabled = o["safelimitedflightmodeenabled"]
+    defaultsafelimitedflightmode = o["defaultsafelimitedflightmode"]
+    safelimitedflightmodeswitchvalue = o["safelimitedflightmodeswitchvalue"]
+    safeinfolabel = o["safeinfolabel"]
     try:
         safemode.set(fh.getValue(["data","autopilot","safeEnabled"], None))
+        safelimitedflightmodeenabled.set(fh.getValue(["data","system","safeLimitedFlightModesDisabled"], None))
+        defaultsafelimitedflightmode.set(fh.getValue(["data","system","defaultSafeLimitedFlightMode"], None))
+        safelimitedflightmodeswitchvalue.set(int(fh.getValue(["data","system","safeLimitedFlightModeSwitch"], None)))
+        safeinfolabel.set('')
     except:
-        traceback.print_exc()
         safemode.set(0)
+        safelimitedflightmodeenabled.set(1)
+        defaultsafelimitedflightmode.set(-1)
+        safelimitedflightmodeswitchvalue.set(255)
+        safeinfolabel.set("This might not be a SAFE receiver.")
 
 def clear(t):
     t.delete(*t.get_children())

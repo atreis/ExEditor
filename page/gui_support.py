@@ -26,12 +26,24 @@ except ImportError:
 def set_Tk_var():
     global safemode
     global filterstring
+    global safelimitedflightmodeenabled
+    global defaultsafelimitedflightmode
+    global safelimitedflightmodeswitchvalue
+    global safeinfolabel
     safemode = IntVar()
+    safelimitedflightmodeenabled = IntVar()
+    defaultsafelimitedflightmode = IntVar()
+    safelimitedflightmodeswitchvalue = StringVar()
     filterstring = StringVar()
+    safeinfolabel = StringVar('')
 
 def menu_open():
     global w
     global safemode
+    global safelimitedflightmodeenabled
+    global defaultsafelimitedflightmode
+    global safelimitedflightmodeswitchvalue
+    global safeinfolabel
     options = {}
     options['title'] = "Open Rx SRM..."
     options['filetypes'] = [('srm', '*.srm'), ('any', '*.*')]
@@ -44,7 +56,12 @@ def menu_open():
             rxgui.PopulateSettings.clear(w.getAdvancedTree())
             rxgui.PopulateSettings.populateAdvancedTree(fh, w.getAdvancedTree())
             filterstring.set('')
-            rxgui.PopulateSettings.populateSafeTab(fh, {"safemode":safemode})
+            rxgui.PopulateSettings.populateSafeTab(fh,
+                                                   {"safemode":safemode,
+                                                    "safelimitedflightmodeenabled":safelimitedflightmodeenabled,
+                                                    "defaultsafelimitedflightmode":defaultsafelimitedflightmode,
+                                                    "safelimitedflightmodeswitchvalue":safelimitedflightmodeswitchvalue,
+                                                    "safeinfolabel": safeinfolabel})
         except:
             traceback.print_exc()
 
@@ -112,11 +129,40 @@ def filterStringChange():
 
 def safeModeChange():
     global safemode
-    global filterstring
     fh = rxgui.rxeditorstate.getFileHandle()
     if fh is not None:
         fh.setValue(["data","autopilot","safeEnabled"], safemode.get())
         filterStringChange()
+
+def safeLimitedFlightModeEnabledChange():
+    global safelimitedflightmodeenabled
+    fh = rxgui.rxeditorstate.getFileHandle()
+    if fh is not None:
+        fh.setValue(["data","system","safeLimitedFlightModesDisabled"], safelimitedflightmodeenabled.get())
+        filterStringChange()
+
+def defaultSafeLimitedFlightModeChange():
+    global defaultsafelimitedflightmode
+    fh = rxgui.rxeditorstate.getFileHandle()
+    if fh is not None:
+        fh.setValue(["data","system","defaultSafeLimitedFlightMode"], defaultsafelimitedflightmode.get())
+        filterStringChange()
+
+def safeLimitedFlightModeSwitchValueChange():
+    global safelimitedflightmodeswitchvalue
+    global safeinfolabel
+    # Validate the value
+    try:
+        intval = int(safelimitedflightmodeswitchvalue.get())
+        if intval <= 255 and intval >= 0:
+            fh = rxgui.rxeditorstate.getFileHandle()
+            if fh is not None:
+                fh.setValue(["data","system","safeLimitedFlightModeSwitch"], intval)
+                filterStringChange()
+        else:
+            safeinfolabel.set("Error: Valu emust be an integer between 0 and 255.")
+    except:
+        safeinfolabel.set("Error: Valu emust be an integer between 0 and 255.")
 
 def init(top, gui, *args, **kwargs):
     global w, top_level, root

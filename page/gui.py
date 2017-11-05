@@ -191,13 +191,15 @@ class RxEditor:
         self.notebook.add(self.notebook_t2, padding=3)
         self.notebook.tab(2, text="Advanced",underline="-1",)
 
+        # -----------------------------------------------------------------------------------
+        # SAFE Tab
+
         self.safe = ttk.Labelframe(self.notebook_basic)
-        self.safe.place(relx=0.01, rely=0.02, height=65, width=65)
+        self.safe.place(x=5, y=5, height=65, width=65)
         self.safe.configure(relief=SUNKEN)
-        self.safe.configure(text='''SAFE(tm)''')
+        self.safe.configure(text='''SAFE®''')
         self.safe.configure(borderwidth="2")
         self.safe.configure(relief=SUNKEN)
-        self.safe.configure(width=220)
 
         safemode = gui_support.safemode
 
@@ -207,6 +209,74 @@ class RxEditor:
 
         self.safeOff = ttk.Radiobutton(self.safe, text='Off', variable=safemode, value=0, command=lambda:gui_support.safeModeChange())
         self.safeOff.place(x=5, y=21, width=50, height=25)
+
+        self.safeLim = ttk.Labelframe(self.notebook_basic)
+        self.safeLim.place(x=75, y=5, height=175, width=200)
+        self.safeLim.configure(relief=SUNKEN)
+        self.safeLim.configure(text='''SAFE® Limited Flight Mode''')
+        self.safeLim.configure(borderwidth="2")
+        self.safeLim.configure(relief=SUNKEN)
+
+        safelimitedflightmodeenabled = gui_support.safelimitedflightmodeenabled
+
+        self.SFMOn = ttk.Radiobutton(self.safeLim, text='Enabled', variable=safelimitedflightmodeenabled, value=0, command=lambda:gui_support.safeLimitedFlightModeEnabledChange())
+        self.SFMOn.place(x=5, y=0, width=100, height=25)
+
+        self.SFMOff = ttk.Radiobutton(self.safeLim, text='Disabled', variable=safelimitedflightmodeenabled, value=1, command=lambda:gui_support.safeLimitedFlightModeEnabledChange())
+        self.SFMOff.place(x=5, y=21, width=100, height=25)
+
+        defaultsafelimitedflightmode = gui_support.defaultsafelimitedflightmode
+
+        self.defaultSFMOne = ttk.Radiobutton(self.safeLim, text='Switch Position 1', variable=defaultsafelimitedflightmode, value=-1, command=lambda:gui_support.defaultSafeLimitedFlightModeChange())
+        self.defaultSFMOne.place(x=5, y=50, width=130, height=25)
+
+        self.defaultSFMTwo = ttk.Radiobutton(self.safeLim, text='Switch Position 2', variable=defaultsafelimitedflightmode, value=-2, command=lambda:gui_support.defaultSafeLimitedFlightModeChange())
+        self.defaultSFMTwo.place(x=5, y=71, width=130, height=25)
+
+        self.defaultSFMThree = ttk.Radiobutton(self.safeLim, text='Switch Position 3', variable=defaultsafelimitedflightmode, value=-3, command=lambda:gui_support.defaultSafeLimitedFlightModeChange())
+        self.defaultSFMThree.place(x=5, y=92, width=130, height=25)
+
+        safelimitedflightmodeswitchvalue = gui_support.safelimitedflightmodeswitchvalue
+
+        self.SFLMSwitchLabel = ttk.Label(self.safeLim)
+        self.SFLMSwitchLabel.place(x=5, y=120, height=29, width=80)
+        self.SFLMSwitchLabel.configure(background="#d9d9d9")
+        self.SFLMSwitchLabel.configure(foreground="#000000")
+        self.SFLMSwitchLabel.configure(relief=FLAT)
+        self.SFLMSwitchLabel.configure(text='''Switch Value:''')
+        self.SFLMSwitchLabel.configure(anchor=W)
+
+        self.SFLMSwitchEntry = Entry(self.safeLim)
+        self.SFLMSwitchEntry.place(x=90, y=120, height=29, width=50)
+        self.SFLMSwitchEntry.configure(background="white")
+        self.SFLMSwitchEntry.configure(disabledforeground="#a3a3a3")
+        self.SFLMSwitchEntry.configure(font="TkFixedFont")
+        self.SFLMSwitchEntry.configure(foreground="#000000")
+        self.SFLMSwitchEntry.configure(insertbackground="black")
+        self.SFLMSwitchEntry.configure(textvariable=safelimitedflightmodeswitchvalue)
+        safelimitedflightmodeswitchvalue.trace("w", lambda name, index, mode, safelimitedflightmodeswitchvalue=safelimitedflightmodeswitchvalue: gui_support.safeLimitedFlightModeSwitchValueChange())
+
+        self.safeInfoLabel = ttk.Label(self.notebook_basic)
+        self.safeInfoLabel.place(x=5, y=190, height=29, relwidth=.98)
+        self.safeInfoLabel.configure(background="#d9d9d9")
+        self.safeInfoLabel.configure(foreground="#ee3333")
+        self.safeInfoLabel.configure(relief=SUNKEN)
+        self.safeInfoLabel.configure(textvariable=gui_support.safeinfolabel)
+        self.safeInfoLabel.configure(anchor=W)
+
+        self.trademark = ttk.Label(self.notebook_basic)
+        self.trademark.place(x=5, rely=0.95, height=29, relwidth=.98)
+        self.trademark.configure(background="#d9d9d9")
+        self.trademark.configure(foreground="#000000")
+        self.trademark.configure(relief=SUNKEN)
+        self.trademark.configure(text="SAFE® - Sensor Assisted Flight Envelope technology - is a registered trademark of Horizon Hobby, Inc.")
+        self.trademark.configure(anchor=W)
+
+        # -----------------------------------------------------------------------------------
+        # Mixes Tab
+
+        # -----------------------------------------------------------------------------------
+        # Advanced Tab
 
         self.FilterLabel = ttk.Label(self.notebook_t2)
         self.FilterLabel.place(relx=0.0, rely=0.0, height=29, width=32)
