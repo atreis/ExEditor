@@ -111,11 +111,11 @@ def updateValues():
                 c2 = 0
                 for v2 in v1:
                     if item==(str(c1)+'-'+str(c2)):
-                        v2 = int(valuestring.get())
+                        values[c1][c2] = int(valuestring.get())
                         break
                     c2 += 1
             elif item==str(c1):
-                v1 = int(valuestring.get())
+                values[c1] = int(valuestring.get())
                 break
             c1 += 1
     else:

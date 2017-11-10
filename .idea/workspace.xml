@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="87239705-7b2a-4f59-9763-7b222e95412e" name="Default" comment="Build of the latest version.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build.bat" />
+    <list default="true" id="87239705-7b2a-4f59-9763-7b222e95412e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/winexe/RxEditor.zip" afterPath="$PROJECT_DIR$/winexe/RxEditor.zip" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/winexe/RxEditor/RxEditor.exe" afterPath="$PROJECT_DIR$/winexe/RxEditor/RxEditor.exe" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/winexe/RxEditor/base_library.zip" afterPath="$PROJECT_DIR$/winexe/RxEditor/base_library.zip" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxEditor.spec" afterPath="$PROJECT_DIR$/RxEditor.spec" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/dialog_support.py" afterPath="$PROJECT_DIR$/page/dialog_support.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/gui.py" afterPath="$PROJECT_DIR$/page/gui.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,8 +21,8 @@
       <file leaf-file-name="gui.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/page/gui.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="89" column="0" lean-forward="false" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+            <state relative-caret-position="450">
+              <caret line="90" column="13" lean-forward="false" selection-start-line="90" selection-start-column="13" selection-end-line="90" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -32,8 +31,8 @@
       <file leaf-file-name="dialog_support.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/page/dialog_support.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6175">
-              <caret line="250" column="16" lean-forward="false" selection-start-line="250" selection-start-column="16" selection-end-line="250" selection-end-column="16" />
+            <state relative-caret-position="125">
+              <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -66,7 +65,7 @@
       <file leaf-file-name="gui_support.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/page/gui_support.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="512">
+            <state relative-caret-position="1500">
               <caret line="63" column="82" lean-forward="false" selection-start-line="63" selection-start-column="82" selection-end-line="63" selection-end-column="82" />
               <folding>
                 <element signature="e#142#153#0" expanded="true" />
@@ -98,7 +97,7 @@
       <file leaf-file-name="PopulateSettings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rxgui/PopulateSettings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="457">
+            <state relative-caret-position="1400">
               <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
               <folding />
             </state>
@@ -137,10 +136,10 @@
         <option value="$PROJECT_DIR$/page/__init__.py" />
         <option value="$PROJECT_DIR$/rxfile/RxFile.py" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/page/dialog_support.py" />
         <option value="$PROJECT_DIR$/rxfile/RxFileHandler.py" />
         <option value="$PROJECT_DIR$/page/gui_support.py" />
         <option value="$PROJECT_DIR$/rxgui/PopulateSettings.py" />
+        <option value="$PROJECT_DIR$/page/dialog_support.py" />
         <option value="$PROJECT_DIR$/page/gui.py" />
       </list>
     </option>
@@ -167,6 +166,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -204,7 +204,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="RecentsManager">
@@ -403,7 +402,14 @@
       <option name="project" value="LOCAL" />
       <updated>1509892190815</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Add version number, and build of the latest version.">
+      <created>1509892805909</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1509892805909</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -451,7 +457,8 @@
     <MESSAGE value="Implement basic validation and only show edit fields that make sense for the type." />
     <MESSAGE value="Make the &quot;safe&quot; tab functional for safe mode on/off." />
     <MESSAGE value="Add safe limited flight mode settings to the safe tab.  Add registered trademark symbol and legal verbiage." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add safe limited flight mode settings to the safe tab.  Add registered trademark symbol and legal verbiage." />
+    <MESSAGE value="Add version number, and build of the latest version." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add version number, and build of the latest version." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -670,16 +677,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/page/dialog_support.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6175">
-          <caret line="250" column="16" lean-forward="false" selection-start-line="250" selection-start-column="16" selection-end-line="250" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rxgui/RxEditorState.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -704,7 +701,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/page/gui_support.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
+        <state relative-caret-position="1500">
           <caret line="63" column="82" lean-forward="false" selection-start-line="63" selection-start-column="82" selection-end-line="63" selection-end-column="82" />
           <folding>
             <element signature="e#142#153#0" expanded="true" />
@@ -716,13 +713,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/rxgui/PopulateSettings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
+        <state relative-caret-position="1400">
           <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
           <folding />
         </state>
@@ -736,10 +732,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/page/dialog_support.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/page/gui.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="89" column="0" lean-forward="false" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+        <state relative-caret-position="450">
+          <caret line="90" column="13" lean-forward="false" selection-start-line="90" selection-start-column="13" selection-end-line="90" selection-end-column="13" />
           <folding />
         </state>
       </provider>
