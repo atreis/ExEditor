@@ -5,6 +5,7 @@ import rxfile
 from page import Tab_Safe
 from page import Tab_Orientation
 from page import Tab_Advanced
+from page import Tab_Mixes
 from page import gui_style
 
 try:
@@ -34,7 +35,9 @@ class RxEditor:
                 rxgui.PopulateSettings.clear(self.advanced.getAdvancedTree())
                 rxgui.PopulateSettings.populateAdvancedTree(fh, self.advanced.getAdvancedTree())
                 self.advanced.setFilterString('')
-                rxgui.PopulateSettings.populateSafeTab(fh, self.safe.getComponents())
+                self.safe.populate(fh)
+                self.orientation.populate(fh)
+                self.mixes.populate(fh)
             except:
                 traceback.print_exc()
 
@@ -205,6 +208,13 @@ class RxEditor:
         tab_num += 1
         self.orientation = Tab_Orientation.Tab_Orientation(self, tab_num)
         self.orientation.draw()
+
+        # -----------------------------------------------------------------------------------
+        # Mixes Tab
+
+        tab_num += 1
+        self.mixes = Tab_Mixes.Tab_Mixes(self, tab_num)
+        self.mixes.draw()
 
         # -----------------------------------------------------------------------------------
         # Advanced Tab

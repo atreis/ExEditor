@@ -54,13 +54,21 @@ class Tab_Safe:
         except:
             self.safeinfotext.set("Error: Value must be an integer between 0 and 255.")
 
-    def getComponents(self):
-        return {
-            "safemode": self.safemode,
-            "safelimitedflightmodeenabled": self.safelimitedflightmodeenabled,
-            "defaultsafelimitedflightmode": self.defaultsafelimitedflightmode,
-            "safelimitedflightmodeswitchvalue": self.safelimitedflightmodeswitchvalue,
-            "safeinfolabel": self.safeinfotext}
+    def populate(self, fh):
+        self.fh = fh
+        try:
+            self.safemode.set(fh.getValue(["data", "autopilot", "safeEnabled"], None))
+            self.safelimitedflightmodeenabled.set(fh.getValue(["data", "system", "safeLimitedFlightModesDisabled"], None))
+            self.defaultsafelimitedflightmode.set(fh.getValue(["data", "system", "defaultSafeLimitedFlightMode"], None))
+            self.safelimitedflightmodeswitchvalue.set(
+                int(fh.getValue(["data", "system", "safeLimitedFlightModeSwitch"], None)))
+            self.safeinfotext.set('')
+        except:
+            self.safemode.set(0)
+            self.safelimitedflightmodeenabled.set(1)
+            self.defaultsafelimitedflightmode.set(-1)
+            self.safelimitedflightmodeswitchvalue.set(255)
+            self.safeinfotext.set("This might not be a SAFE receiver.")
 
     def draw(self):
         self.notebook_safe = ttk.Frame(self.notebook)
