@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="87239705-7b2a-4f59-9763-7b222e95412e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/page/Tab_Mixes.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/samples/Factory - FPV Manta 1.1m.srm" />
+    <list default="true" id="87239705-7b2a-4f59-9763-7b222e95412e" name="Default" comment="Build">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/winexe/RxEditor.zip" afterPath="$PROJECT_DIR$/winexe/RxEditor.zip" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/winexe/RxEditor/RxEditor.exe" afterPath="$PROJECT_DIR$/winexe/RxEditor/RxEditor.exe" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/winexe/RxEditor/base_library.zip" afterPath="$PROJECT_DIR$/winexe/RxEditor/base_library.zip" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/RxEditor.py" afterPath="$PROJECT_DIR$/page/RxEditor.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/Tab_Orientation.py" afterPath="$PROJECT_DIR$/page/Tab_Orientation.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/Tab_Safe.py" afterPath="$PROJECT_DIR$/page/Tab_Safe.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rxgui/PopulateSettings.py" afterPath="$PROJECT_DIR$/rxgui/PopulateSettings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples/Factory - Spitfire Mk XIV 1.2m.srm" afterPath="$PROJECT_DIR$/samples/Factory - Spitfire Mk XIV 1.2m.srm" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -33,8 +30,8 @@
       <file leaf-file-name="RxEditor.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/page/RxEditor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="217" column="0" lean-forward="true" selection-start-line="217" selection-start-column="0" selection-end-line="217" selection-end-column="0" />
+            <state relative-caret-position="457">
+              <caret line="104" column="40" lean-forward="false" selection-start-line="104" selection-start-column="40" selection-end-line="104" selection-end-column="40" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
               </folding>
@@ -90,7 +87,7 @@
         <entry file="file://$PROJECT_DIR$/page/Tab_Orientation.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="236">
-              <caret line="46" column="45" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="148" selection-end-column="0" />
+              <caret line="46" column="45" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="148" selection-end-column="0" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -114,7 +111,7 @@
         <entry file="file://$PROJECT_DIR$/page/Tab_Safe.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="650">
-              <caret line="77" column="54" lean-forward="true" selection-start-line="77" selection-start-column="54" selection-end-line="77" selection-end-column="54" />
+              <caret line="77" column="54" lean-forward="false" selection-start-line="77" selection-start-column="54" selection-end-line="77" selection-end-column="54" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -455,7 +452,14 @@
       <option name="project" value="LOCAL" />
       <updated>1510523447292</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Implement Orientation tab, add stub for mixes tab.">
+      <created>1510709129750</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1510709129750</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -470,7 +474,7 @@
   <component name="ToolWindowManager">
     <frame x="541" y="88" width="2088" height="1399" extended-state="0" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16650532" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16650532" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32927817" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3300892" sideWeight="0.5038722" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32927817" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -506,7 +510,8 @@
     <MESSAGE value="Add version number, and build of the latest version." />
     <MESSAGE value="Fix bug with editing values that are in arrays." />
     <MESSAGE value="Refactor the code and do some cleanup." />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor the code and do some cleanup." />
+    <MESSAGE value="Implement Orientation tab, add stub for mixes tab." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement Orientation tab, add stub for mixes tab." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -747,7 +752,7 @@
     <entry file="file://$PROJECT_DIR$/page/Tab_Safe.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="650">
-          <caret line="77" column="54" lean-forward="true" selection-start-line="77" selection-start-column="54" selection-end-line="77" selection-end-column="54" />
+          <caret line="77" column="54" lean-forward="false" selection-start-line="77" selection-start-column="54" selection-end-line="77" selection-end-column="54" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
@@ -757,7 +762,7 @@
     <entry file="file://$PROJECT_DIR$/page/Tab_Orientation.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="236">
-          <caret line="46" column="45" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="148" selection-end-column="0" />
+          <caret line="46" column="45" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="148" selection-end-column="0" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
@@ -776,8 +781,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/page/RxEditor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="217" column="0" lean-forward="true" selection-start-line="217" selection-start-column="0" selection-end-line="217" selection-end-column="0" />
+        <state relative-caret-position="457">
+          <caret line="104" column="40" lean-forward="false" selection-start-line="104" selection-start-column="40" selection-end-line="104" selection-end-column="40" />
           <folding>
             <element signature="e#0#16#0" expanded="true" />
           </folding>
