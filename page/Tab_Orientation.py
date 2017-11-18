@@ -23,6 +23,8 @@ class Tab_Orientation:
         return self.fh
 
     def __rxOrientationChange(self):
+        if self.ignorechange:
+            return
         '''
         Pins Toward Nose, Label Toward Sky	axis2aircraft = 36, axisDirection = 4
         Pins Toward Nose, Label Toward Ground	axis2aircraft = 36, axisDirection = 2
@@ -66,6 +68,7 @@ class Tab_Orientation:
 
     def populate(self, fh):
         self.fh = fh
+        self.ignorechange = True
         try:
             axisdir = fh.getValue(["data","system","axisDirection"], None)
             axis2 = fh.getValue(["data","system","axis2aircraft"], None)
@@ -90,8 +93,10 @@ class Tab_Orientation:
                 self.rxorientation.set(8)
             else:
                 self.rxorientation.set(-1)
+            self.ignorechange = False
         except:
             self.rxorientation.set(-1)
+            self.ignorechange = False
 
     def draw(self):
         self.notebook_orientation = ttk.Frame(self.notebook)
@@ -135,6 +140,8 @@ class Tab_Orientation:
 
         self.rxOrientOther.place(x=5, y=231, width=230, height=25)
 
+    def replaceFh(self):
+        self.fh = rxgui.rxeditorstate.getFileHandle()
 
     def __init__(self, rxeditor, tab_num):
         self.top = rxeditor.getTop()

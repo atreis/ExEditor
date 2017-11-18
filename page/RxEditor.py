@@ -23,6 +23,10 @@ except ImportError:
 
 class RxEditor:
     def __menu_open(self):
+        fh = rxgui.rxeditorstate.getFileHandle()
+        if fh is not None and fh.isDirty():
+            self.__menu_saveAs()
+
         options = {}
         options['title'] = "Open Rx SRM..."
         options['filetypes'] = [('srm', '*.srm'), ('any', '*.*')]
@@ -32,12 +36,16 @@ class RxEditor:
             try:
                 fh = rxfile.RxFileHandler.RxFileWrapper(filename.name)
                 rxgui.rxeditorstate.setFileHandle(fh)
-                rxgui.PopulateSettings.clear(self.advanced.getAdvancedTree())
-                rxgui.PopulateSettings.populateAdvancedTree(fh, self.advanced.getAdvancedTree())
-                self.advanced.setFilterString('')
+                self.safe.replaceFh()
+                self.orientation.replaceFh()
+                self.mixes.replaceFh()
+                self.advanced.replaceFh()
                 self.safe.populate(fh)
                 self.orientation.populate(fh)
                 self.mixes.populate(fh)
+                self.advanced.setFilterString('')
+                # Put the filename into the title
+                self.top.title('RxEditor - '+filename.name)
             except:
                 traceback.print_exc()
 

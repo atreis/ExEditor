@@ -134,6 +134,9 @@ class Tab_Advanced:
 
         self.advancedtree.bind("<Double-1>", self.__doubleClickAdvancedTree)
 
+    def replaceFh(self):
+        self.fh = rxgui.rxeditorstate.getFileHandle()
+
     def __init__(self, rxeditor, tab_num):
         self.top = rxeditor.getTop()
         self.notebook = rxeditor.getNotebook()

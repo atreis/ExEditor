@@ -23,24 +23,32 @@ class Tab_Safe:
         return self.fh
 
     def __safeModeChange(self):
+        if self.ignorechange:
+            return
         fh = self.__getFileHandle()
         if fh is not None:
             fh.setValue(["data", "autopilot", "safeEnabled"], self.safemode.get())
             self.rxeditor.dataChange()
 
     def __safeLimitedFlightModeEnabledChange(self):
+        if self.ignorechange:
+            return
         fh = self.__getFileHandle()
         if fh is not None:
             fh.setValue(["data", "system", "safeLimitedFlightModesDisabled"], self.safelimitedflightmodeenabled.get())
             self.rxeditor.dataChange()
 
     def __defaultSafeLimitedFlightModeChange(self):
+        if self.ignorechange:
+            return
         fh = self.__getFileHandle()
         if fh is not None:
             fh.setValue(["data", "system", "defaultSafeLimitedFlightMode"], self.defaultsafelimitedflightmode.get())
             self.rxeditor.dataChange()
 
     def __safeLimitedFlightModeSwitchValueChange(self):
+        if self.ignorechange:
+            return
         # Validate the value
         try:
             intval = int(self.safelimitedflightmodeswitchvalue.get())
@@ -56,6 +64,7 @@ class Tab_Safe:
 
     def populate(self, fh):
         self.fh = fh
+        self.ignorechange = True
         try:
             self.safemode.set(fh.getValue(["data", "autopilot", "safeEnabled"], None))
             self.safelimitedflightmodeenabled.set(fh.getValue(["data", "system", "safeLimitedFlightModesDisabled"], None))
@@ -63,12 +72,14 @@ class Tab_Safe:
             self.safelimitedflightmodeswitchvalue.set(
                 int(fh.getValue(["data", "system", "safeLimitedFlightModeSwitch"], None)))
             self.safeinfotext.set('')
+            self.ignorechange = False
         except:
             self.safemode.set(0)
             self.safelimitedflightmodeenabled.set(1)
             self.defaultsafelimitedflightmode.set(-1)
             self.safelimitedflightmodeswitchvalue.set(255)
             self.safeinfotext.set("This might not be a SAFE receiver.")
+            self.ignorechange = False
 
     def draw(self):
         self.notebook_safe = ttk.Frame(self.notebook)
@@ -153,6 +164,8 @@ class Tab_Safe:
         self.trademark.configure(text="SAFE® - Sensor Assisted Flight Envelope technology - is a registered trademark of Horizon Hobby, Inc.")
         self.trademark.configure(anchor=W)
 
+    def replaceFh(self):
+        self.fh = rxgui.rxeditorstate.getFileHandle()
 
     def __init__(self, rxeditor, tab_num):
         self.rxeditor = rxeditor
@@ -167,3 +180,4 @@ class Tab_Safe:
         self.safelimitedflightmodeswitchvalue = StringVar()
         self.safeinfotext = StringVar()
         self.fh = rxgui.rxeditorstate.getFileHandle()
+        self.ignorechange = False

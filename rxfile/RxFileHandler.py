@@ -96,7 +96,11 @@ class RxFileWrapper:
     def isDirty(self):
         return self.dirty
 
+    def getFilename(self):
+        return self.filename
+
     def __init__(self, filename):
         self.rxfile = RxFile.RxFile(filename)
         self.rxfile.load()
         self.dirty = False
+        self.filename = filename

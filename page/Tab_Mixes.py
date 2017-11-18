@@ -24,12 +24,16 @@ class Tab_Mixes:
 
     def populate(self, fh):
         self.fh = fh
+        self.ignorechange = True
+        self.ignorechange = False
 
     def draw(self):
         self.notebook_mixes = ttk.Frame(self.notebook)
         self.notebook.add(self.notebook_mixes, padding=3)
         self.notebook.tab(self.tab_num, text="Mixes",underline="-1",)
 
+    def replaceFh(self):
+        self.fh = rxgui.rxeditorstate.getFileHandle()
 
     def __init__(self, rxeditor, tab_num):
         self.top = rxeditor.getTop()
@@ -39,3 +43,4 @@ class Tab_Mixes:
         self.gui_style = rxeditor.getStyle()
         self.style = self.gui_style.getStyle()
         self.fh = rxgui.rxeditorstate.getFileHandle()
+        self.ignorechange = False
