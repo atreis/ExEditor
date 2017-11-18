@@ -30,8 +30,8 @@
       <file leaf-file-name="RxEditor.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/page/RxEditor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="112" column="40" lean-forward="false" selection-start-line="112" selection-start-column="40" selection-end-line="112" selection-end-column="40" />
+            <state relative-caret-position="684">
+              <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
               </folding>
@@ -486,7 +486,14 @@
       <option name="project" value="LOCAL" />
       <updated>1511024790911</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Build">
+      <created>1511025975027</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1511025975027</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -538,9 +545,9 @@
     <MESSAGE value="Fix bug with editing values that are in arrays." />
     <MESSAGE value="Refactor the code and do some cleanup." />
     <MESSAGE value="Implement Orientation tab, add stub for mixes tab." />
-    <MESSAGE value="Build" />
     <MESSAGE value="Fix bug with advanced tab not reloading for new files.  Add filename to title." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix bug with advanced tab not reloading for new files.  Add filename to title." />
+    <MESSAGE value="Build" />
+    <option name="LAST_COMMIT_MESSAGE" value="Build" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -810,8 +817,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/page/RxEditor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="112" column="40" lean-forward="false" selection-start-line="112" selection-start-column="40" selection-end-line="112" selection-end-column="40" />
+        <state relative-caret-position="684">
+          <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
           <folding>
             <element signature="e#0#16#0" expanded="true" />
           </folding>

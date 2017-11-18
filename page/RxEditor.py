@@ -64,6 +64,8 @@ class RxEditor:
             filename = filedialog.asksaveasfile(mode="w", **options)
             if filename is not None:
                 fh.saveAs(filename.name)
+                # Put the filename into the title
+                self.top.title('RxEditor - '+filename.name)
 
     def __menu_exit(self):
         fh = rxgui.rxeditorstate.getFileHandle()
