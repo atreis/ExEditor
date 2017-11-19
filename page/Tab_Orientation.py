@@ -40,30 +40,41 @@ class Tab_Orientation:
             if self.rxorientation.get()==0:
                 fh.setValue(["data", "system", "axisDirection"], 4)
                 fh.setValue(["data", "system", "axis2aircraft"], 36)
+                self.rxOrientImage.configure(image=self.rxPinsForwardLabelUpImg)
             elif self.rxorientation.get()==1:
                 fh.setValue(["data", "system", "axisDirection"], 2)
                 fh.setValue(["data", "system", "axis2aircraft"], 36)
+                self.rxOrientImage.configure(image=self.rxPinsForwardLabelDownImg)
             elif self.rxorientation.get()==2:
                 fh.setValue(["data", "system", "axisDirection"], 6)
                 fh.setValue(["data", "system", "axis2aircraft"], 24)
+                self.rxOrientImage.configure(image=self.rxPinsForwardLabelLeftImg)
             elif self.rxorientation.get()==3:
                 fh.setValue(["data", "system", "axisDirection"], 0)
                 fh.setValue(["data", "system", "axis2aircraft"], 24)
+                self.rxOrientImage.configure(image=self.rxPinsForwardLabelRightImg)
             elif self.rxorientation.get()==4:
                 fh.setValue(["data", "system", "axisDirection"], 7)
                 fh.setValue(["data", "system", "axis2aircraft"], 36)
+                self.rxOrientImage.configure(image=self.rxPinsAftLabelUpImg)
             elif self.rxorientation.get()==5:
                 fh.setValue(["data", "system", "axisDirection"], 1)
                 fh.setValue(["data", "system", "axis2aircraft"], 36)
+                self.rxOrientImage.configure(image=self.rxPinsAftLabelDownImg)
             elif self.rxorientation.get()==6:
                 fh.setValue(["data", "system", "axisDirection"], 3)
                 fh.setValue(["data", "system", "axis2aircraft"], 24)
+                self.rxOrientImage.configure(image=self.rxPinsAftLabelLeftImg)
             elif self.rxorientation.get()==7:
                 fh.setValue(["data", "system", "axisDirection"], 5)
                 fh.setValue(["data", "system", "axis2aircraft"], 24)
+                self.rxOrientImage.configure(image=self.rxPinsAftLabelRightImg)
             elif self.rxorientation.get()==8:
                 fh.setValue(["data", "system", "axisDirection"], 6)
                 fh.setValue(["data", "system", "axis2aircraft"], 33)
+                self.rxOrientImage.configure(image=self.rxPinsLeftLabelUpImg)
+            else:
+                self.rxOrientImage.configure(image=self.rxOtherImg)
             self.rxeditor.dataChange()
 
     def populate(self, fh):
@@ -75,24 +86,34 @@ class Tab_Orientation:
 
             if axisdir == 4 and axis2 == 36:
                 self.rxorientation.set(0)
+                self.rxOrientImage.configure(image=self.rxPinsForwardLabelUpImg)
             elif axisdir == 2 and axis2 == 36:
                 self.rxorientation.set(1)
+                self.rxOrientImage.configure(image=self.rxPinsForwardLabelDownImg)
             elif axisdir == 6 and axis2 == 24:
                 self.rxorientation.set(2)
+                self.rxOrientImage.configure(image=self.rxPinsForwardLabelLeftImg)
             elif axisdir == 0 and axis2 == 24:
                 self.rxorientation.set(3)
+                self.rxOrientImage.configure(image=self.rxPinsForwardLabelRightImg)
             elif axisdir == 7 and axis2 == 36:
                 self.rxorientation.set(4)
+                self.rxOrientImage.configure(image=self.rxPinsAftLabelUpImg)
             elif axisdir == 1 and axis2 == 36:
                 self.rxorientation.set(5)
+                self.rxOrientImage.configure(image=self.rxPinsAftLabelDownImg)
             elif axisdir == 3 and axis2 == 24:
                 self.rxorientation.set(6)
+                self.rxOrientImage.configure(image=self.rxPinsAftLabelLeftImg)
             elif axisdir == 5 and axis2 == 24:
                 self.rxorientation.set(7)
+                self.rxOrientImage.configure(image=self.rxPinsAftLabelRightImg)
             elif axisdir == 6 and axis2 == 33:
                 self.rxorientation.set(8)
+                self.rxOrientImage.configure(image=self.rxPinsLeftLabelUpImg)
             else:
                 self.rxorientation.set(-1)
+                self.rxOrientImage.configure(image=self.rxOtherImg)
             self.ignorechange = False
         except:
             self.rxorientation.set(-1)
@@ -104,7 +125,7 @@ class Tab_Orientation:
         self.notebook.tab(self.tab_num, text="Orientation",underline="-1",)
 
         self.rxorientframe = ttk.Labelframe(self.notebook_orientation)
-        self.rxorientframe.place(x=5, y=5, height=280, width=250)
+        self.rxorientframe.place(x=5, y=5, height=280, width=500)
         self.rxorientframe.configure(relief=SUNKEN)
         self.rxorientframe.configure(text='''Receiver Orientation''')
         self.rxorientframe.configure(borderwidth="2")
@@ -140,6 +161,12 @@ class Tab_Orientation:
 
         self.rxOrientOther.place(x=5, y=231, width=230, height=25)
 
+        # rx orientation image
+        self.rxOrientImage = ttk.Label(self.rxorientframe)
+        self.rxOrientImage.place(x=240, y=0, width=250, height=250)
+        self.rxOrientImage.configure(image = self.rxOtherImg)
+        self.rxOrientImage.configure(relief=SUNKEN)
+
     def replaceFh(self):
         self.fh = rxgui.rxeditorstate.getFileHandle()
 
@@ -153,3 +180,17 @@ class Tab_Orientation:
         self.fh = rxgui.rxeditorstate.getFileHandle()
         self.rxorientation = IntVar()
         self.rxorientation.set(-1)
+
+        # Load the orientation images
+        self.rxPinsForwardLabelUpImg = PhotoImage(file="images/rx-orientation/rx-labeluppinsforward.png")
+        self.rxPinsForwardLabelDownImg = PhotoImage(file="images/rx-orientation/rx-labeldownpinsforward.png")
+        self.rxPinsForwardLabelLeftImg = PhotoImage(file="images/rx-orientation/rx-labelleftpinsforward.png")
+        self.rxPinsForwardLabelRightImg = PhotoImage(file="images/rx-orientation/rx-labelrightpinsforward.png")
+        self.rxPinsAftLabelUpImg = PhotoImage(file="images/rx-orientation/rx-labeluppinsaft.png")
+        self.rxPinsAftLabelDownImg = PhotoImage(file="images/rx-orientation/rx-labeldownpinsaft.png")
+        self.rxPinsAftLabelLeftImg = PhotoImage(file="images/rx-orientation/rx-labelleftpinsaft.png")
+        self.rxPinsAftLabelRightImg = PhotoImage(file="images/rx-orientation/rx-labelrightpinsaft.png")
+
+        self.rxPinsLeftLabelUpImg = PhotoImage(file="images/rx-orientation/rx-labeluppinsleft.png")
+
+        self.rxOtherImg = PhotoImage(file="images/rx-orientation/rx-other.png")
