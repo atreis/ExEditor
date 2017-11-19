@@ -2,9 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="87239705-7b2a-4f59-9763-7b222e95412e" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/logo.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/winexe/RxEditor/images/logo.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/winexe/RxEditor/images/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/winexe/RxEditor/images/rx-orientation/rx-labeldownpinsaft.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/winexe/RxEditor/images/rx-orientation/rx-labeldownpinsforward.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/winexe/RxEditor/images/rx-orientation/rx-labeldownpinsleft.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/winexe/RxEditor/images/rx-orientation/rx-labeldownpinsright.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/winexe/RxEditor/images/rx-orientation/rx-labelleftpinsaft.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/winexe/RxEditor/images/rx-orientation/rx-labelleftpinsforward.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/winexe/RxEditor/images/rx-orientation/rx-labelrightpinsaft.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/winexe/RxEditor/images/rx-orientation/rx-labelrightpinsforward.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/winexe/RxEditor/images/rx-orientation/rx-labeluppinsaft.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/winexe/RxEditor/images/rx-orientation/rx-labeluppinsforward.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/winexe/RxEditor/images/rx-orientation/rx-labeluppinsleft.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/winexe/RxEditor/images/rx-orientation/rx-labeluppinsright.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/winexe/RxEditor/images/rx-orientation/rx-other.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/winexe/RxEditor/images/working/2000px-Airplane_silhouette.svg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/winexe/RxEditor/images/working/airplane-silhouette-rotated-colored-sized.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/winexe/RxEditor/images/working/airplane-silhouette-rotated.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/winexe/RxEditor/images/working/airplane-silhouette.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/winexe/RxEditor/images/working/rx-labeldown.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/winexe/RxEditor/images/working/rx.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/winexe/RxEditor.zip" afterPath="$PROJECT_DIR$/winexe/RxEditor.zip" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/winexe/RxEditor/RxEditor.exe" afterPath="$PROJECT_DIR$/winexe/RxEditor/RxEditor.exe" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/winexe/RxEditor/base_library.zip" afterPath="$PROJECT_DIR$/winexe/RxEditor/base_library.zip" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/Dialog_AdvancedEdit.py" afterPath="$PROJECT_DIR$/page/Dialog_AdvancedEdit.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/Tab_Orientation.py" afterPath="$PROJECT_DIR$/page/Tab_Orientation.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxEditor.spec" afterPath="$PROJECT_DIR$/RxEditor.spec" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.bat" afterPath="$PROJECT_DIR$/build.bat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/RxEditor.py" afterPath="$PROJECT_DIR$/page/RxEditor.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,24 +42,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="gui.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/page/gui.py">
+      <file leaf-file-name="RxEditor.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/page/RxEditor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="26" column="19" lean-forward="false" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+            <state relative-caret-position="299">
+              <caret line="114" column="40" lean-forward="false" selection-start-line="114" selection-start-column="40" selection-end-line="114" selection-end-column="40" />
+              <folding>
+                <element signature="e#0#16#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RxEditor.spec" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RxEditor.spec">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RxEditor.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/page/RxEditor.py">
+      <file leaf-file-name="build.bat" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.bat">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="55" column="0" lean-forward="false" selection-start-line="54" selection-start-column="21" selection-end-line="55" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#16#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="50">
+              <caret line="2" column="29" lean-forward="false" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -42,16 +79,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RxFileHandler.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rxfile/RxFileHandler.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="98" column="26" lean-forward="false" selection-start-line="98" selection-start-column="26" selection-end-line="98" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -81,11 +108,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Tab_Orientation.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Tab_Orientation.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/page/Tab_Orientation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4750">
-              <caret line="190" column="0" lean-forward="true" selection-start-line="190" selection-start-column="0" selection-end-line="190" selection-end-column="0" />
+            <state relative-caret-position="553">
+              <caret line="223" column="0" lean-forward="false" selection-start-line="223" selection-start-column="0" selection-end-line="223" selection-end-column="0" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -165,9 +192,11 @@
         <option value="$PROJECT_DIR$/page/Tab_Mixes.py" />
         <option value="$PROJECT_DIR$/page/Tab_Safe.py" />
         <option value="$PROJECT_DIR$/rxgui/PopulateSettings.py" />
-        <option value="$PROJECT_DIR$/page/RxEditor.py" />
         <option value="$PROJECT_DIR$/page/Dialog_AdvancedEdit.py" />
         <option value="$PROJECT_DIR$/page/Tab_Orientation.py" />
+        <option value="$PROJECT_DIR$/RxEditor.spec" />
+        <option value="$PROJECT_DIR$/build.bat" />
+        <option value="$PROJECT_DIR$/page/RxEditor.py" />
       </list>
     </option>
   </component>
@@ -495,7 +524,14 @@
       <option name="project" value="LOCAL" />
       <updated>1511098265567</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Fix issue with editing attTrim and axisTrim in advanced.  Start adding attTrim and axisTrim to orientation tab.">
+      <created>1511101142647</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1511101142647</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -510,7 +546,7 @@
   <component name="ToolWindowManager">
     <frame x="183" y="88" width="2446" height="1399" extended-state="0" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20132013" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20132013" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32927817" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3300892" sideWeight="0.5038722" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32927817" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -551,20 +587,14 @@
     <MESSAGE value="Build" />
     <MESSAGE value="Build - second try on filename in title." />
     <MESSAGE value="Add orientation images.  fixes #2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add orientation images.  fixes #2" />
+    <MESSAGE value="Fix issue with editing attTrim and axisTrim in advanced.  Start adding attTrim and axisTrim to orientation tab." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix issue with editing attTrim and axisTrim in advanced.  Start adding attTrim and axisTrim to orientation tab." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/rxfile/RxFile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/page/gui.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -689,20 +719,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RxEditor.spec">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RxEditor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/page/gui_style.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -714,14 +730,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1950">
           <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/page/gui.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="26" column="19" lean-forward="false" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -761,16 +769,6 @@
         <state relative-caret-position="0">
           <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/page/RxEditor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="55" column="0" lean-forward="false" selection-start-line="54" selection-start-column="21" selection-end-line="55" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -816,10 +814,52 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/page/Tab_Orientation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4750">
-          <caret line="190" column="0" lean-forward="true" selection-start-line="190" selection-start-column="0" selection-end-line="190" selection-end-column="0" />
+        <state relative-caret-position="553">
+          <caret line="223" column="0" lean-forward="false" selection-start-line="223" selection-start-column="0" selection-end-line="223" selection-end-column="0" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RxEditor.spec">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RxEditor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/gui.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="29" column="3" lean-forward="true" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.bat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="29" lean-forward="false" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/RxEditor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="114" column="40" lean-forward="false" selection-start-line="114" selection-start-column="40" selection-end-line="114" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
           </folding>
         </state>
       </provider>
