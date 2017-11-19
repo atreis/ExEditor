@@ -40,7 +40,19 @@ class Dialog_AdvancedEdit:
                     self.infolabeltext.set('')
                     return True
             except:
-                self.infolabeltext.set("ERROR: Value must a number")
+                self.infolabeltext.set("ERROR: Value must be a number")
+                return False
+        elif valtype in ["int_16bit_signed"]:
+            try:
+                valint = int(val)
+                if valint > 32767 or valint < -32768:
+                    self.infolabeltext.set("ERROR: Value must be between -32768 and 32767 (16 bit binary)")
+                    return False
+                else:
+                    self.infolabeltext.set('')
+                    return True
+            except:
+                self.infolabeltext.set("ERROR: Value must be a number")
                 return False
         elif valtype == "hex_8bit":
             try:
@@ -52,7 +64,7 @@ class Dialog_AdvancedEdit:
                     self.infolabeltext.set('')
                     return True
             except:
-                self.infolabeltext.set("ERROR: Value must a number")
+                self.infolabeltext.set("ERROR: Value must be a number")
                 return False
         self.infolabeltext.set('')
         return True
@@ -133,6 +145,14 @@ class Dialog_AdvancedEdit:
                 if self.valuebinary.get() != valbin:
                     self.ignorebinary.set(True)
                     self.valuebinary.set(valbin)
+            elif valtype == "int_16bit_signed":
+                self.label1.set("Integer:")
+                if self.valuehex.get() != '':
+                    self.ignorehex.set(True)
+                    self.valuehex.set('')
+                if self.valuebinary.get() != '':
+                    self.ignorebinary.set(True)
+                    self.valuebinary.set('')
             elif valtype == "string":
                 self.label1.set("String:")
                 if self.valuehex.get() != '':
@@ -145,7 +165,7 @@ class Dialog_AdvancedEdit:
             self.__updateValues()
 
     def __showHide(self, widgets):
-        if self.valuetype.get() == "string" and not self.isbinhidden.get():
+        if self.valuetype.get() in ["string", "int_16bit_signed"] and not self.isbinhidden.get():
             top = widgets["top"]
             for widget in widgets["hex"]:
                 widget.lower(top)
@@ -167,7 +187,7 @@ class Dialog_AdvancedEdit:
                 widget.lift(top)
             self.isbinhidden.set(False)
 
-        if self.valuetype.get() == "string" and self.isstringhidden.get():
+        if self.valuetype.get() in ["string", "int_16bit_signed"] and self.isstringhidden.get():
             top = widgets["top"]
             for widget in widgets["string"]:
                 widget.lift(top)
@@ -237,7 +257,10 @@ class Dialog_AdvancedEdit:
             t.insert('', 'end', '0', text='0', values=[self.values, self.values])
         elif isinstance(self.values, list):
             # print('values is list: '+str(self.values))
-            self.valuetype.set('int_8bit_unsigned')
+            if 'attTrim' in self.item or 'axisTrim' in self.item:
+                self.valuetype.set('int_16bit_signed')
+            else:
+                self.valuetype.set('int_8bit_unsigned')
             c1 = 0
             for v1 in self.values:
                 if isinstance(v1, list):

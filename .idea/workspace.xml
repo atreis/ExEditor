@@ -2,26 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="87239705-7b2a-4f59-9763-7b222e95412e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/rx-orientation/rx-labeldownpinsaft.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/rx-orientation/rx-labeldownpinsforward.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/rx-orientation/rx-labeldownpinsleft.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/rx-orientation/rx-labeldownpinsright.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/rx-orientation/rx-labelleftpinsaft.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/rx-orientation/rx-labelleftpinsforward.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/rx-orientation/rx-labelrightpinsaft.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/rx-orientation/rx-labelrightpinsforward.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/rx-orientation/rx-labeluppinsaft.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/rx-orientation/rx-labeluppinsforward.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/rx-orientation/rx-labeluppinsleft.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/rx-orientation/rx-labeluppinsright.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/rx-orientation/rx-other.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/working/2000px-Airplane_silhouette.svg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/working/airplane-silhouette-rotated-colored-sized.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/working/airplane-silhouette-rotated.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/working/airplane-silhouette.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/working/rx-labeldown.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/working/rx.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/Dialog_AdvancedEdit.py" afterPath="$PROJECT_DIR$/page/Dialog_AdvancedEdit.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/Tab_Orientation.py" afterPath="$PROJECT_DIR$/page/Tab_Orientation.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -78,8 +60,8 @@
       <file leaf-file-name="Dialog_AdvancedEdit.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/page/Dialog_AdvancedEdit.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="413" column="10" lean-forward="false" selection-start-line="413" selection-start-column="10" selection-end-line="413" selection-end-column="10" />
+            <state relative-caret-position="274">
+              <caret line="261" column="0" lean-forward="false" selection-start-line="261" selection-start-column="0" selection-end-line="261" selection-end-column="0" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
               </folding>
@@ -90,7 +72,7 @@
       <file leaf-file-name="Tab_Advanced.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/page/Tab_Advanced.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="1275">
               <caret line="81" column="0" lean-forward="false" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
@@ -102,8 +84,8 @@
       <file leaf-file-name="Tab_Orientation.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/page/Tab_Orientation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="132" column="0" lean-forward="true" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
+            <state relative-caret-position="4750">
+              <caret line="190" column="0" lean-forward="true" selection-start-line="190" selection-start-column="0" selection-end-line="190" selection-end-column="0" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -178,13 +160,13 @@
         <option value="$PROJECT_DIR$/page/dialog_support.py" />
         <option value="$PROJECT_DIR$/page/gui_support.py" />
         <option value="$PROJECT_DIR$/page/gui.py" />
-        <option value="$PROJECT_DIR$/page/Dialog_AdvancedEdit.py" />
         <option value="$PROJECT_DIR$/rxfile/RxFileHandler.py" />
         <option value="$PROJECT_DIR$/page/Tab_Advanced.py" />
         <option value="$PROJECT_DIR$/page/Tab_Mixes.py" />
         <option value="$PROJECT_DIR$/page/Tab_Safe.py" />
         <option value="$PROJECT_DIR$/rxgui/PopulateSettings.py" />
         <option value="$PROJECT_DIR$/page/RxEditor.py" />
+        <option value="$PROJECT_DIR$/page/Dialog_AdvancedEdit.py" />
         <option value="$PROJECT_DIR$/page/Tab_Orientation.py" />
       </list>
     </option>
@@ -506,7 +488,14 @@
       <option name="project" value="LOCAL" />
       <updated>1511026418937</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Add orientation images.  fixes #2">
+      <created>1511098265567</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1511098265567</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -561,7 +550,8 @@
     <MESSAGE value="Fix bug with advanced tab not reloading for new files.  Add filename to title." />
     <MESSAGE value="Build" />
     <MESSAGE value="Build - second try on filename in title." />
-    <option name="LAST_COMMIT_MESSAGE" value="Build - second try on filename in title." />
+    <MESSAGE value="Add orientation images.  fixes #2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add orientation images.  fixes #2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -744,16 +734,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/page/gui_support.py" />
-    <entry file="file://$PROJECT_DIR$/page/Dialog_AdvancedEdit.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="413" column="10" lean-forward="false" selection-start-line="413" selection-start-column="10" selection-end-line="413" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/page/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="27">
@@ -765,16 +745,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="254">
           <caret line="340" column="0" lean-forward="false" selection-start-line="340" selection-start-column="0" selection-end-line="340" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/page/Tab_Advanced.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="81" column="0" lean-forward="false" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -824,10 +794,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/page/Tab_Advanced.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1275">
+          <caret line="81" column="0" lean-forward="false" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/Dialog_AdvancedEdit.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="261" column="0" lean-forward="false" selection-start-line="261" selection-start-column="0" selection-end-line="261" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/page/Tab_Orientation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="132" column="0" lean-forward="true" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
+        <state relative-caret-position="4750">
+          <caret line="190" column="0" lean-forward="true" selection-start-line="190" selection-start-column="0" selection-end-line="190" selection-end-column="0" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>

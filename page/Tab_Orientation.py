@@ -167,6 +167,28 @@ class Tab_Orientation:
         self.rxOrientImage.configure(image = self.rxOtherImg)
         self.rxOrientImage.configure(relief=SUNKEN)
 
+        # ------------------------------ attTrim settings
+#        self.rxattframe = ttk.Labelframe(self.notebook_orientation)
+#        self.rxattframe.place(x=510, y=5, height=200, width=200)
+#        self.rxattframe.configure(relief=SUNKEN)
+#        self.rxattframe.configure(text='''Receiver Trim''')
+#        self.rxattframe.configure(borderwidth="2")
+#        self.rxattframe.configure(relief=SUNKEN)
+
+#        atttrim0 = self.atttrim0
+#        atttrim1 = self.atttrim1
+
+#        self.rxattlabel = ttk.Label(self.rxattframe)
+#        self.rxattlabel.place(x=5, y=0, width=150, height=21)
+#        self.rxattlabel.configure(text = 'Attitude Trim')
+
+#        self.rxattlabel0 = ttk.Label(self.rxattframe)
+#        self.rxattlabel0.place(x=5, y=21, width=50, height=25)
+#        self.rxattlabel0.configure(text = 'Aileron: ')
+
+#        self.rxPinsForwardLabelUp = ttk.Radiobutton(self.rxorientframe, text='Pins Towards Nose, Label Up', variable=rxorientation, value=0, command=lambda:self.__rxOrientationChange())
+#        self.rxPinsForwardLabelDown = ttk.Radiobutton(self.rxorientframe, text='Pins Towards Nose, Label Down', variable=rxorientation, value=1, command=lambda:self.__rxOrientationChange())
+
     def replaceFh(self):
         self.fh = rxgui.rxeditorstate.getFileHandle()
 
@@ -180,6 +202,12 @@ class Tab_Orientation:
         self.fh = rxgui.rxeditorstate.getFileHandle()
         self.rxorientation = IntVar()
         self.rxorientation.set(-1)
+        self.atttrim0 = -1
+        self.atttrim1 = -1
+        self.atttrim2 = -1
+        self.axistrim0 = -1
+        self.axistrim1 = -1
+        self.axistrim2 = -1
 
         # Load the orientation images
         self.rxPinsForwardLabelUpImg = PhotoImage(file="images/rx-orientation/rx-labeluppinsforward.png")
