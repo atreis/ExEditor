@@ -2,36 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="87239705-7b2a-4f59-9763-7b222e95412e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/logo.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/winexe/RxEditor/images/logo.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/winexe/RxEditor/images/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/winexe/RxEditor/images/rx-orientation/rx-labeldownpinsaft.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/winexe/RxEditor/images/rx-orientation/rx-labeldownpinsforward.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/winexe/RxEditor/images/rx-orientation/rx-labeldownpinsleft.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/winexe/RxEditor/images/rx-orientation/rx-labeldownpinsright.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/winexe/RxEditor/images/rx-orientation/rx-labelleftpinsaft.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/winexe/RxEditor/images/rx-orientation/rx-labelleftpinsforward.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/winexe/RxEditor/images/rx-orientation/rx-labelrightpinsaft.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/winexe/RxEditor/images/rx-orientation/rx-labelrightpinsforward.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/winexe/RxEditor/images/rx-orientation/rx-labeluppinsaft.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/winexe/RxEditor/images/rx-orientation/rx-labeluppinsforward.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/winexe/RxEditor/images/rx-orientation/rx-labeluppinsleft.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/winexe/RxEditor/images/rx-orientation/rx-labeluppinsright.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/winexe/RxEditor/images/rx-orientation/rx-other.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/winexe/RxEditor/images/working/2000px-Airplane_silhouette.svg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/winexe/RxEditor/images/working/airplane-silhouette-rotated-colored-sized.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/winexe/RxEditor/images/working/airplane-silhouette-rotated.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/winexe/RxEditor/images/working/airplane-silhouette.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/winexe/RxEditor/images/working/rx-labeldown.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/winexe/RxEditor/images/working/rx.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/winexe/RxEditor.zip" afterPath="$PROJECT_DIR$/winexe/RxEditor.zip" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/winexe/RxEditor/RxEditor.exe" afterPath="$PROJECT_DIR$/winexe/RxEditor/RxEditor.exe" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/winexe/RxEditor/base_library.zip" afterPath="$PROJECT_DIR$/winexe/RxEditor/base_library.zip" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RxEditor.spec" afterPath="$PROJECT_DIR$/RxEditor.spec" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.bat" afterPath="$PROJECT_DIR$/build.bat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/RxEditor.py" afterPath="$PROJECT_DIR$/page/RxEditor.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/rx-orientation/rx-labelaftpinsleft.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/rx-orientation/rx-labelaftpinsright.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/rx-orientation/rx-labelforwardpinsleft.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/rx-orientation/rx-labelforwardpinsright.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/working/rx-side.png" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/page/Tab_Orientation.py" afterPath="$PROJECT_DIR$/page/Tab_Orientation.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -42,10 +19,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="RxEditor.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RxEditor.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/page/RxEditor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
+            <state relative-caret-position="2650">
               <caret line="114" column="40" lean-forward="false" selection-start-line="114" selection-start-column="40" selection-end-line="114" selection-end-column="40" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
@@ -77,21 +54,9 @@
       <file leaf-file-name="PopulateSettings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rxgui/PopulateSettings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="875">
               <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Dialog_AdvancedEdit.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/page/Dialog_AdvancedEdit.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="261" column="0" lean-forward="false" selection-start-line="261" selection-start-column="0" selection-end-line="261" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#16#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -99,7 +64,7 @@
       <file leaf-file-name="Tab_Advanced.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/page/Tab_Advanced.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1275">
+            <state relative-caret-position="1850">
               <caret line="81" column="0" lean-forward="false" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
@@ -108,11 +73,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Tab_Orientation.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Tab_Orientation.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/page/Tab_Orientation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="553">
-              <caret line="223" column="0" lean-forward="false" selection-start-line="223" selection-start-column="0" selection-end-line="223" selection-end-column="0" />
+            <state relative-caret-position="594">
+              <caret line="162" column="0" lean-forward="false" selection-start-line="162" selection-start-column="0" selection-end-line="162" selection-end-column="0" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -123,7 +88,7 @@
       <file leaf-file-name="Tab_Mixes.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/page/Tab_Mixes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
+            <state relative-caret-position="400">
               <caret line="20" column="27" lean-forward="false" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
@@ -135,7 +100,7 @@
       <file leaf-file-name="Tab_Safe.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/page/Tab_Safe.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
+            <state relative-caret-position="3825">
               <caret line="157" column="0" lean-forward="false" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
@@ -193,10 +158,10 @@
         <option value="$PROJECT_DIR$/page/Tab_Safe.py" />
         <option value="$PROJECT_DIR$/rxgui/PopulateSettings.py" />
         <option value="$PROJECT_DIR$/page/Dialog_AdvancedEdit.py" />
-        <option value="$PROJECT_DIR$/page/Tab_Orientation.py" />
         <option value="$PROJECT_DIR$/RxEditor.spec" />
         <option value="$PROJECT_DIR$/build.bat" />
         <option value="$PROJECT_DIR$/page/RxEditor.py" />
+        <option value="$PROJECT_DIR$/page/Tab_Orientation.py" />
       </list>
     </option>
   </component>
@@ -222,14 +187,25 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="RxEditor" type="b2602c69:ProjectViewProjectNode" />
               <item name="RxEditor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RxEditor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RxEditor" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RxEditor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RxEditor" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="rx-orientation" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="RxEditor" type="b2602c69:ProjectViewProjectNode" />
@@ -299,6 +275,7 @@
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
     </configuration>
     <configuration name="gui" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -316,6 +293,7 @@
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
     </configuration>
     <configuration name="gui_support" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -333,6 +311,7 @@
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
     </configuration>
     <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -350,6 +329,7 @@
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
     </configuration>
     <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Python.test" />
@@ -368,6 +348,9 @@
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -531,7 +514,14 @@
       <option name="project" value="LOCAL" />
       <updated>1511101142647</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Build and add application icon.">
+      <created>1511103136536</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1511103136536</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -549,14 +539,13 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20132013" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32927817" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3300892" sideWeight="0.5038722" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32927817" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32872254" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928804" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32628152" sideWeight="0.49612778" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32596233" sideWeight="0.49612778" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928804" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -564,6 +553,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -588,7 +578,8 @@
     <MESSAGE value="Build - second try on filename in title." />
     <MESSAGE value="Add orientation images.  fixes #2" />
     <MESSAGE value="Fix issue with editing attTrim and axisTrim in advanced.  Start adding attTrim and axisTrim to orientation tab." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix issue with editing attTrim and axisTrim in advanced.  Start adding attTrim and axisTrim to orientation tab." />
+    <MESSAGE value="Build and add application icon." />
+    <option name="LAST_COMMIT_MESSAGE" value="Build and add application icon." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -599,7 +590,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="12" column="4" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -645,7 +635,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1150">
           <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -760,21 +749,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="98" column="26" lean-forward="false" selection-start-line="98" selection-start-column="26" selection-end-line="98" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rxgui/PopulateSettings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/page/Tab_Mixes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
+        <state relative-caret-position="400">
           <caret line="20" column="27" lean-forward="false" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
@@ -784,7 +764,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/page/Tab_Safe.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
+        <state relative-caret-position="3825">
           <caret line="157" column="0" lean-forward="false" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
@@ -794,28 +774,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/page/Tab_Advanced.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1275">
+        <state relative-caret-position="1850">
           <caret line="81" column="0" lean-forward="false" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/page/Dialog_AdvancedEdit.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="261" column="0" lean-forward="false" selection-start-line="261" selection-start-column="0" selection-end-line="261" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/page/Tab_Orientation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="553">
-          <caret line="223" column="0" lean-forward="false" selection-start-line="223" selection-start-column="0" selection-end-line="223" selection-end-column="0" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
@@ -834,7 +794,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -842,7 +801,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="389">
           <caret line="29" column="3" lean-forward="true" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -856,10 +814,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/page/RxEditor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
+        <state relative-caret-position="2650">
           <caret line="114" column="40" lean-forward="false" selection-start-line="114" selection-start-column="40" selection-end-line="114" selection-end-column="40" />
           <folding>
             <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/Dialog_AdvancedEdit.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="849">
+          <caret line="392" column="0" lean-forward="true" selection-start-line="378" selection-start-column="0" selection-end-line="392" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rxgui/PopulateSettings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="875">
+          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/Tab_Orientation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="162" column="0" lean-forward="false" selection-start-line="162" selection-start-column="0" selection-end-line="162" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
