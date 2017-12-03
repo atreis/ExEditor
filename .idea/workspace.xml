@@ -2,9 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="87239705-7b2a-4f59-9763-7b222e95412e" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/winexe/RxEditor/images/rx-orientation/rx-labelaftpinsleft.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/winexe/RxEditor/images/rx-orientation/rx-labelaftpinsright.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/winexe/RxEditor/images/rx-orientation/rx-labelforwardpinsleft.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/winexe/RxEditor/images/rx-orientation/rx-labelforwardpinsright.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/winexe/RxEditor/images/working/rx-side.png" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/page/Tab_Mixes.py" afterPath="$PROJECT_DIR$/page/Tab_Mixes.py" />
-      <change beforePath="$PROJECT_DIR$/page/Tab_Orientation.py" afterPath="$PROJECT_DIR$/page/Tab_Orientation.py" />
+      <change beforePath="$PROJECT_DIR$/page/RxEditor.py" afterPath="$PROJECT_DIR$/page/RxEditor.py" />
+      <change beforePath="$PROJECT_DIR$/winexe/RxEditor.zip" afterPath="$PROJECT_DIR$/winexe/RxEditor.zip" />
+      <change beforePath="$PROJECT_DIR$/winexe/RxEditor/RxEditor.exe" afterPath="$PROJECT_DIR$/winexe/RxEditor/RxEditor.exe" />
+      <change beforePath="$PROJECT_DIR$/winexe/RxEditor/base_library.zip" afterPath="$PROJECT_DIR$/winexe/RxEditor/base_library.zip" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,11 +22,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="RxEditor.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="RxEditor.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/page/RxEditor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="114" column="40" lean-forward="false" selection-start-line="114" selection-start-column="40" selection-end-line="114" selection-end-column="40" />
+            <state relative-caret-position="1050">
+              <caret line="114" column="41" lean-forward="false" selection-start-line="114" selection-start-column="41" selection-end-line="114" selection-end-column="41" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
               </folding>
@@ -81,11 +88,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Tab_Mixes.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Tab_Mixes.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/page/Tab_Mixes.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="244">
-              <caret line="140" column="0" lean-forward="true" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
+              <caret line="140" column="0" lean-forward="false" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -155,9 +162,9 @@
         <option value="$PROJECT_DIR$/page/Dialog_AdvancedEdit.py" />
         <option value="$PROJECT_DIR$/RxEditor.spec" />
         <option value="$PROJECT_DIR$/build.bat" />
-        <option value="$PROJECT_DIR$/page/RxEditor.py" />
         <option value="$PROJECT_DIR$/page/Tab_Orientation.py" />
         <option value="$PROJECT_DIR$/page/Tab_Mixes.py" />
+        <option value="$PROJECT_DIR$/page/RxEditor.py" />
       </list>
     </option>
   </component>
@@ -513,7 +520,14 @@
       <option name="project" value="LOCAL" />
       <updated>1512227835431</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Add throttle to elevator mix to mixes tab.  fixes #9">
+      <created>1512269553526</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1512269553526</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -572,7 +586,8 @@
     <MESSAGE value="Fix issue with editing attTrim and axisTrim in advanced.  Start adding attTrim and axisTrim to orientation tab." />
     <MESSAGE value="Build and add application icon." />
     <MESSAGE value="Add attitude trim, and also add additional orientations. fixes #5" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add attitude trim, and also add additional orientations. fixes #5" />
+    <MESSAGE value="Add throttle to elevator mix to mixes tab.  fixes #9" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add throttle to elevator mix to mixes tab.  fixes #9" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -795,16 +810,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/page/RxEditor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="114" column="40" lean-forward="false" selection-start-line="114" selection-start-column="40" selection-end-line="114" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rxgui/PopulateSettings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="875">
@@ -834,9 +839,19 @@
     <entry file="file://$PROJECT_DIR$/page/Tab_Mixes.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="244">
-          <caret line="140" column="0" lean-forward="true" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
+          <caret line="140" column="0" lean-forward="false" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/RxEditor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1050">
+          <caret line="114" column="41" lean-forward="false" selection-start-line="114" selection-start-column="41" selection-end-line="114" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
           </folding>
         </state>
       </provider>
