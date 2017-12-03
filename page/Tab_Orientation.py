@@ -244,11 +244,9 @@ class Tab_Orientation:
             else:
                 degstr = str(-1.0 * degrees)
                 self.rxattlabeldesc1.configure(text=(degstr + ' degrees, rx nose raised'))
-
-            self.ignorechange = False
         except:
             self.rxorientation.set(-1)
-            self.ignorechange = False
+        self.ignorechange = False
 
     def draw(self):
         self.notebook_orientation = ttk.Frame(self.notebook)

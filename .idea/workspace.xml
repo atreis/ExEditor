@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="87239705-7b2a-4f59-9763-7b222e95412e" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/rx-orientation/rx-labelaftpinsleft.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/rx-orientation/rx-labelaftpinsright.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/rx-orientation/rx-labelforwardpinsleft.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/rx-orientation/rx-labelforwardpinsright.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/working/rx-side.png" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/page/Tab_Mixes.py" afterPath="$PROJECT_DIR$/page/Tab_Mixes.py" />
       <change beforePath="$PROJECT_DIR$/page/Tab_Orientation.py" afterPath="$PROJECT_DIR$/page/Tab_Orientation.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,7 +18,7 @@
       <file leaf-file-name="RxEditor.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/page/RxEditor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2650">
+            <state relative-caret-position="0">
               <caret line="114" column="40" lean-forward="false" selection-start-line="114" selection-start-column="40" selection-end-line="114" selection-end-column="40" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
@@ -73,11 +69,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Tab_Orientation.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Tab_Orientation.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/page/Tab_Orientation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="162" column="0" lean-forward="false" selection-start-line="162" selection-start-column="0" selection-end-line="162" selection-end-column="0" />
+            <state relative-caret-position="625">
+              <caret line="140" column="0" lean-forward="false" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -85,11 +81,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Tab_Mixes.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Tab_Mixes.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/page/Tab_Mixes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="20" column="27" lean-forward="false" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+            <state relative-caret-position="244">
+              <caret line="140" column="0" lean-forward="true" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -154,7 +150,6 @@
         <option value="$PROJECT_DIR$/page/gui.py" />
         <option value="$PROJECT_DIR$/rxfile/RxFileHandler.py" />
         <option value="$PROJECT_DIR$/page/Tab_Advanced.py" />
-        <option value="$PROJECT_DIR$/page/Tab_Mixes.py" />
         <option value="$PROJECT_DIR$/page/Tab_Safe.py" />
         <option value="$PROJECT_DIR$/rxgui/PopulateSettings.py" />
         <option value="$PROJECT_DIR$/page/Dialog_AdvancedEdit.py" />
@@ -162,6 +157,7 @@
         <option value="$PROJECT_DIR$/build.bat" />
         <option value="$PROJECT_DIR$/page/RxEditor.py" />
         <option value="$PROJECT_DIR$/page/Tab_Orientation.py" />
+        <option value="$PROJECT_DIR$/page/Tab_Mixes.py" />
       </list>
     </option>
   </component>
@@ -188,24 +184,12 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="RxEditor" type="b2602c69:ProjectViewProjectNode" />
               <item name="RxEditor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RxEditor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RxEditor" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RxEditor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RxEditor" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="rx-orientation" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="RxEditor" type="b2602c69:ProjectViewProjectNode" />
@@ -236,6 +220,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -521,7 +506,14 @@
       <option name="project" value="LOCAL" />
       <updated>1511103136536</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Add attitude trim, and also add additional orientations. fixes #5">
+      <created>1512227835431</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1512227835431</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -536,7 +528,7 @@
   <component name="ToolWindowManager">
     <frame x="183" y="88" width="2446" height="1399" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20132013" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20132013" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32927817" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3300892" sideWeight="0.5038722" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32872254" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -579,7 +571,8 @@
     <MESSAGE value="Add orientation images.  fixes #2" />
     <MESSAGE value="Fix issue with editing attTrim and axisTrim in advanced.  Start adding attTrim and axisTrim to orientation tab." />
     <MESSAGE value="Build and add application icon." />
-    <option name="LAST_COMMIT_MESSAGE" value="Build and add application icon." />
+    <MESSAGE value="Add attitude trim, and also add additional orientations. fixes #5" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add attitude trim, and also add additional orientations. fixes #5" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -752,16 +745,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/page/Tab_Mixes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="20" column="27" lean-forward="false" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/page/Tab_Safe.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3825">
@@ -814,18 +797,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/page/RxEditor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2650">
+        <state relative-caret-position="0">
           <caret line="114" column="40" lean-forward="false" selection-start-line="114" selection-start-column="40" selection-end-line="114" selection-end-column="40" />
           <folding>
             <element signature="e#0#16#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/page/Dialog_AdvancedEdit.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="849">
-          <caret line="392" column="0" lean-forward="true" selection-start-line="378" selection-start-column="0" selection-end-line="392" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -837,10 +813,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/page/Dialog_AdvancedEdit.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="329" column="0" lean-forward="false" selection-start-line="329" selection-start-column="0" selection-end-line="329" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/page/Tab_Orientation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="162" column="0" lean-forward="false" selection-start-line="162" selection-start-column="0" selection-end-line="162" selection-end-column="0" />
+        <state relative-caret-position="625">
+          <caret line="140" column="0" lean-forward="false" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/Tab_Mixes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="140" column="0" lean-forward="true" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
